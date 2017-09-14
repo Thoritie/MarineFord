@@ -10,6 +10,7 @@ return [
     'id' => 'app-backend',
 	'name'=>'Basic App',
     'basePath' => dirname(__DIR__),
+    'defaultRoute' => 'home/index',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
