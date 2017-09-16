@@ -3,22 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Marine Ford</title>
+    <style>
+      .item-fix{position: absolute;top: 300px;left: 530px; color:White; font-size:100px; font-family:monospace;}
+    </style>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header"><h1>MarineFord</h1></div>
-          <ul class="navbar-header">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-          </ul>
-
-
-
-      </div>
-    </nav> -->
-
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -43,18 +32,10 @@
       </div><!-- /.container-fluid -->
     </div>
     </nav>
-
-
-
-
-
-
-
   <br><br><br>
+<p class="item-fix"><strong><u> MarinFord.<u></strong></p>
   <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image">
-  <p class="text-muted">...</p>
-  <br><br>
-  <div class="container">
+
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row">
@@ -65,7 +46,10 @@
                   My Temp
             </div>
         </div>
+        <br><br><br><br>
     </div>
-  </div>
+    <footer>
+
+    </footer>
   </body>
 </html>
