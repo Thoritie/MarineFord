@@ -21,7 +21,7 @@ class Boat extends \yii\mongodb\ActiveRecord
     {
         return [
           '_id',
-        	'boat_id',
+          'boat_id',
           'name',
           'type',
         	'maxseat',

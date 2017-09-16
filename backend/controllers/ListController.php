@@ -3,6 +3,7 @@ namespace backend\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\data\Pagination;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
@@ -31,12 +32,55 @@ class ListController extends Controller
     public function actionIndex()
     {
 
+
         $this->layout = "@backend/themes/adminlte/layouts/index";
-        $boats = Boat::find()->all();
+        $query = Boat::find();
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count(),
+        ]);
+
+        $boats = $query->orderBy('boat_id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+
         return $this->render('index',
         [
-          'result' => $boats
+          'result' => $boats,
+          'pagination' => $pagination,
         ]);
+
+
+
+
+    }
+
+    public function actionTestlist()
+    {
+
+
+        $this->layout = "@backend/themes/adminlte/layouts/index";
+        $query = Boat::find();
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count(),
+        ]);
+
+        $boats = $query->orderBy('boat_id')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+
+        return $this->render('testlist',
+        [
+          'result' => $boats,
+          'pagination' => $pagination,
+        ]);
+
+
 
 
     }
