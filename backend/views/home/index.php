@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Marine Ford</title>
     <style>
-      .item-fix{position: absolute;top: 300px;left: 400px; color:White; font-size:100px; font-family:monospace;}
+      .item-fix{position: absolute;top: 300px;left: 400px; color:White; font-size:100px; font-family:sans-serif;}
+      .color1{background-color: White;}
     </style>
-  </head>
   <body>
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,7 +24,7 @@
         </div>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><h4><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Home </h4></a></li>
+             <li><a href="#"><h4><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Home </h4></a></li>
             <li><a href="list/index"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp; List </h4></a></li>
             <li><a href="reser/index"><h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp; จอง </h4></a></li>
           </ul>
@@ -33,21 +33,31 @@
     </div>
     </nav>
   <br><br><br>
-<p class="item-fix"><strong><u> MarineFord.<u></strong></p>
+<div class="container">
+<p class="item-fix"><strong><u> MarineFord.</u></strong></p>
+</div>
   <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image">
+      <div class="panel panel-default color1">
+        <div class="panel-body color1">
+            <div class="container">
+                  <center>
+                <h1><strong> My Term </strong></hr>
+                </center>
+              <hr>
+              <br>
+              <center>
+                    <img src="http://www.mx7.com/i/104/mKMVth.jpg" alt="Responsive image" class="img-circle" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="http://www.mx7.com/i/2a6/7jCWPF.jpg" alt="Responsive image" class="img-circle" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="http://www.mx7.com/i/124/QjvzQR.jpg" alt="Responsive image" class="img-circle" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="http://www.mx7.com/i/1ed/0P5L0i.jpg" alt="Responsive image" class="img-circle" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="http://www.mx7.com/i/1d1/6IPhj7.jpg" alt="Responsive image" class="img-circle" width="200" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-5">
-              pixture
-              </div>
-              <div class="col-md-4">
-                  My Temp
-            </div>
+              </center>
+
+                <br><br><br><br>
+          </div>
         </div>
-        <br><br><br><br>
-    </div>
+      </div>
     <footer>
 
     </footer>
