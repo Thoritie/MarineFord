@@ -17,15 +17,9 @@
                     </div>
                 </div><br><br>
                 <div class="form-group">
-                    <label for="inputPassword" class="col-sm-2 control-label">ประเภท</label>
+                  <label for="inputPassword" class="col-sm-2 control-label">ประเภท</label>
                     <div class="col-sm-10">
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                      <input type="text" class="form-control" id="inputtext" placeholder="text">
                     </div>
                   </div><br><br>
                   <div class="form-group">
@@ -63,6 +57,35 @@
                       </div>
                     </div>
                   </div
+                </div>
+              </div>
+            </div>
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-1 control-label">ชื่อลูกค้า</label>
+                                <div class="col-xs-5 col-sm-5"><div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputtext" placeholder="text">
+                                  </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label for="inputPassword" class="col-sm-1 control-label">นามสกุล</label>
+                                      <div class="col-xs-5 col-sm-5"><div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="text">
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div><br><br><br>
+                            <div class="form-group">
+                              <label for="inputPassword" class="col-sm-1 control-label">email</label>
+                                  <div class="col-xs-5 col-sm-5"><div class="col-sm-10">
+                                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                  </div>
+                             </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </body>
             </html>
