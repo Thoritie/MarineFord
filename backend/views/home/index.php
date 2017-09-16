@@ -25,8 +25,8 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><h4><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Home </h4></a></li>
-            <li><a href="#"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp; List </h4></a></li>
-            <li><a href="#"><h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp; จอง </h4></a></li>
+            <li><a href="list/index"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp; List </h4></a></li>
+            <li><a href="reser/index"><h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp; จอง </h4></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

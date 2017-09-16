@@ -32,7 +32,11 @@ class ListController extends Controller
     {
 
         $this->layout = "@backend/themes/adminlte/layouts/index";
-        return $this->render('index');
+        $boats = Boat::find()->all();
+        return $this->render('index',
+        [
+          'result' => $boats
+        ]);
 
 
     }

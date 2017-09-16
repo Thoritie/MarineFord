@@ -4,7 +4,7 @@ namespace backend\models;
 
 use Yii;
 
-class Lecturer extends \yii\mongodb\ActiveRecord
+class Boat extends \yii\mongodb\ActiveRecord
 {
     /**
      * @inheritdoc
