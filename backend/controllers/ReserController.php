@@ -12,7 +12,7 @@ use backend\models\Customer;
 /**
  * Site controller
  */
-class ListController extends Controller
+class ReserController extends Controller
 {
     /**
      * @inheritdoc
