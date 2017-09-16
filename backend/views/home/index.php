@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Marine Ford</title>
     <style>
-      .item-fix{position: absolute;top: 300px;left: 530px; color:White; font-size:100px; font-family:monospace;}
+      .item-fix{position: absolute;top: 300px;left: 400px; color:White; font-size:100px; font-family:monospace;}
     </style>
   </head>
   <body>
@@ -33,7 +33,7 @@
     </div>
     </nav>
   <br><br><br>
-<p class="item-fix"><strong><u> MarinFord.<u></strong></p>
+<p class="item-fix"><strong><u> MarineFord.<u></strong></p>
   <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image">
 
       <div class="panel panel-default">
