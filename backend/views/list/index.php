@@ -24,10 +24,11 @@ $baseUrl = \Yii::getAlias('@web');
 			    <div class="thumbnail" >
 			      <img class="img-responsive img-thumbnail" src="" alt=" " style="width:250px;height:250px";>
 			      <div class="caption">
-			        <h3 class="card-title">name :<?=$var['name']?></h3>
-			          <p class="card-text">type :<?=$var['type']?></p>
-			          <p class="card-text">max of seat :<?=$var['maxseat']?></p>
-			        <button class="btn btn-primary" role="button" href="<?=$baseUrl."/reser/index" ?>">book</button>
+			        <h3 class="card-title">Name : <?=$var['name']?></h3>
+							  <p class="card-text">Boat id : <?=$var['boat_id']?></p>
+			          <p class="card-text">Type : <?=$var['type']?></p>
+			          <p class="card-text">Max of seat : <?=$var['maxseat']?></p>
+								<a class="btn btn-primary" href="<?="../reser/index".$var['boat_id'] ?>" role="button" style="margin-right:5px">Book Now</a>
 			      </div>
 			    </div>
 			  </div>
