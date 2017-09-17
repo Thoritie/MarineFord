@@ -30,7 +30,6 @@ class ReserController extends Controller
      */
     public function actionIndex()
     {
-
         //Hardcode Id Boat
         $boats = Boat::findOne("59b78ca826ecdff35186e115");
         $this->layout = "@backend/themes/adminlte/layouts/index";
@@ -40,10 +39,18 @@ class ReserController extends Controller
           'result' => $boats,
 
         ]);
+    }
 
+    public function actionReserboat()
+    {
+      $this->layout = "@backend/themes/adminlte/layouts/index";
+    	$request = Yii::$app->request;
+    	$id = $request->get('id',null);
 
-
-
+    	$model = Boat::findOne($id);
+    	return $this->render('Reserboat', [
+    			 'model' => $model
+    	]);
     }
 
 

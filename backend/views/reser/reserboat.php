@@ -10,16 +10,17 @@ $baseUrl=\Yii::getAlias('@web');
 
           <div class="panel-body">
             <div class="row">
+              <input type="hidden" name="id" value="<?=$model['_id'] ?>">
               <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail"></div>
               <div class="col-md-6"><div class="form-group">
-                  <h1>ชื่อเรือ <?= Html::encode("{$result->name}")?></h1>
+                  <h1>ชื่อเรือ : <?=$model['name'] ?></h1>
                 </div>
                 <div class="form-group">
-                  <h1>ประเภท <?= Html::encode("{$result->type}")?></h1>
+                  <h1>ประเภท : <?=$model['type'] ?></h1>
                 </div>
 
                 <div class="form-group">
-                      <h1>จำนวนที่นั่ง <?= Html::encode("{$result->maxseat}")?></h1>
+                      <h1>จำนวนที่นั่ง : <?=$model['maxseat'] ?></h1>
                 </div>
 
                     <!-- <div class="form-group">
@@ -47,6 +48,13 @@ $baseUrl=\Yii::getAlias('@web');
                 </div>
                 </div>
               </div>
+              <form action="<?=$baseUrl."/reser/save" ?>" method="get">
+                ชื่อลูกค้า <input type="text" name="cusname">
+                ระยะทาง <input type="text" name="distance">
+                วันไป <input type="text" name="rentdate">
+                  วันกลับ <input type="text" name="backdate">
+                <input type="submit" value="บันทึก">
+              </form>
             </div>
                     <!-- <div class="panel panel-default">
                       <div class="panel-body">
@@ -62,17 +70,3 @@ $baseUrl=\Yii::getAlias('@web');
                         <br><br><br>
                       </div>
                     </div> -->
-
-                  </div>
-                </div>
-
-
-
-
-<form action="<?=$baseUrl."/reser/save" ?>" method="get">
-	ชื่อลูกค้า <input type="text" name="cusname">
-	ระยะทาง <input type="text" name="distance">
-	วันไป <input type="text" name="rentdate">
-    วันกลับ <input type="text" name="backdate">
-	<input type="submit" value="บันทึก">
-</form>

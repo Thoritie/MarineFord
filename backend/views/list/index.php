@@ -28,7 +28,7 @@ $baseUrl = \Yii::getAlias('@web');
 							  <p class="card-text">Boat id : <?=$var['boat_id']?></p>
 			          <p class="card-text">Type : <?=$var['type']?></p>
 			          <p class="card-text">Max of seat : <?=$var['maxseat']?></p>
-								<a class="btn btn-primary" href="<?="../reser/index".$var['boat_id'] ?>" role="button" style="margin-right:5px">Book Now</a>
+								<a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
 			      </div>
 			    </div>
 			  </div>
