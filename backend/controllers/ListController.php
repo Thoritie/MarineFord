@@ -31,12 +31,19 @@ class ListController extends Controller
      */
     public function actionIndex()
     {
-
-
         $this->layout = "@backend/themes/adminlte/layouts/index";
+        $request = Yii::$app->request;
+      	$search = $request->get('search',null);
+
         $query = Boat::find();
+        if($search != null){
+      		$query->where(["maxseat" => $search]);
+
+      	}
+      	$result = $query->all();
+
         $pagination = new Pagination([
-            'defaultPageSize' => 5,
+            'defaultPageSize' => 6,
             'totalCount' => $query->count(),
         ]);
 
@@ -45,22 +52,16 @@ class ListController extends Controller
             ->limit($pagination->limit)
             ->all();
 
-
         return $this->render('index',
         [
+          'input' => $search,
           'result' => $boats,
           'pagination' => $pagination,
         ]);
-
-
-
-
     }
 
     public function actionTestlist()
     {
-
-
         $this->layout = "@backend/themes/adminlte/layouts/index";
         $query = Boat::find();
         $pagination = new Pagination([
@@ -79,11 +80,5 @@ class ListController extends Controller
           'result' => $boats,
           'pagination' => $pagination,
         ]);
-
-
-
-
     }
-
-
 }
