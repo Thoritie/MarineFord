@@ -107,12 +107,29 @@
                         </div>
                     </div>
                     </div>
+                    <div class="col-md-3">
+                      <div class="panel panel-default ">
+                          <div class="panel-body">
+                            <center><img src="https://image.flaticon.com/icons/png/512/504/504627.png" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                            <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การวิจัย เพื่อทําการทดลองวิจัยว่า ธุรกิจนี้จะประสบผลสําเร็จหรือไม่ จึงสร้างระบบเพื่อประกอบการวิจัย วัดจากรายได้แต่ละเดือน</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="panel panel-default ">
+                            <div class="panel-body">
+                              <center><img src="https://image.flaticon.com/icons/svg/172/172155.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                              <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ของกำนัล ลูกค้าใดมีการจองยานพาหนะกับบริษัทมากที่สุด ทางบริษัทก็จะมีของกํานัลให้</p>
+                              <br>
+                            </div>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
         <div class="panel-body color3">
           <div class="container">
-
+          <br>
           </div>
         </div>
     <footer>
