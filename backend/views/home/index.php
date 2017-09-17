@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Marine Ford</title>
     <style>
-      .item-fix{position: absolute;top: 300px;left: 400px; color:White; font-size:100px; font-family:sans-serif;}
+      .item-fix{position: absolute;top: 400px;left: 580px; color:White; font-size:120px; font-family:sans-serif;}
       .color1{background-color: White;}
       .color2{background-color: #a7a7a7; }
       .color3{background-color: #99c864; }
@@ -38,12 +38,12 @@
 <div class="container">
 <p class="item-fix"><strong><u> MarineFord.</u></strong></p>
 </div>
-  <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image">
+  <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image" style="width:100%">
       <div class="panel panel-default color1">
         <div class="panel-body color1">
             <div class="container">
                   <center>
-                <h1> MY TEAM </h1>
+                <h1><strong> MY TEAM </strong></h1>
                 </center>
               <hr>
               <br>
@@ -61,7 +61,7 @@
         </div>
         <div class="panel-body color2">
             <div class="container">
-                <h1> BOUNDARY </h1>
+                <center><h1><strong> BOUNDRY </strong></h1></center>
                 <hr>
                 <div class="row">
                   <div class="col-md-3">
