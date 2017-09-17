@@ -31,41 +31,83 @@ class ReserController extends Controller
     public function actionIndex()
     {
 
-        $show = Boat::findOne("59b78ca826ecdff35186e115");
-
-        // echo $show->name;
-
-        // $request = Yii::$app->request;
-        // $idboat = $request->get('idboat',null);
-        //
-        // $query = Boat::findOne($idboat);
-        // $query->where(["boat_id" => $idboat]);
-        // $result = $query->all();
-        //
-        // $this->layout = "@backend/themes/adminlte/layouts/index";
-        // return $this->render('Index',[
-     // 		'query' => $query
-     // 	]);
-
-
+        //Hardcode Id Boat
+        $boats = Boat::findOne("59b78ca826ecdff35186e115");
         $this->layout = "@backend/themes/adminlte/layouts/index";
-        return $this->render('index');
+
+        return $this->render('index',
+        [
+          'result' => $boats,
+
+        ]);
 
 
-    }
-
-    public function actionTestreser()
-    {
-
-        $this->layout = "@backend/themes/adminlte/layouts/index";
-        return $this->render('testreser');
 
 
     }
 
     public function actionSave(){
+        $request = Yii::$app->request;
+        // $num = Customer::maximum(
+        // [
+        //     "column" => "idcustomer",
+        // ]
+        // );
+        // $numbill = Customer::maximum(
+        // [
+        //     "column" => "bill.idbill",
+        // ]
+        // );
+
+        $boats = Boat::findOne("59b78ca826ecdff35186e115");
+
+    	$id = $request->get('id',null);
+    	$cusname = $request->get('cusname',null);
+        $rentdate = $request->get('rentdate',null);
+        $backdate = $request->get('backdate',null);
+        $distance = $request->get('distance',null);
+
+    	$baseUrl = \Yii::getAlias('@web');
+
+    	$modelCus;
+
+    	if($id == null){
+    		//create
+    		$modelCus = new Customer();
+    	}else{
+    		//update
+    		$modelCus = Customer::findOne($id);
+    	}
+
+    	$modelCus->idcustomer = $num+1;
+        $modelCus->cusname = $cusname;
+        $modelCus->bill->idbill = $numbill+1;
+        $modelCus->bill->idboat= $boats->boat_id;
+        $modelCus->bill->rentdate= $rentdate;
+        $modelCus->bill->backtdate= $backdate;
+        $modelCus->bill->distance= $distance;
+
+
+
+    	if($model->save()){
+    		echo "success";
+    	}else{
+    		echo "unsuccess";
+    	}
+
+    	return $this->redirect($baseUrl."/reser/index");
 
     }
+
+    // $request = Yii::$app->request;
+    //     	$id = $request->get('id',null);
+    //
+    //     	$model = Course::findOne($id);
+    //     	return $this->render('edit',[
+    //     		'model' => $model
+    //     	]);
+
+
 
 
 }
