@@ -6,6 +6,8 @@
     <style>
       .item-fix{position: absolute;top: 300px;left: 400px; color:White; font-size:100px; font-family:sans-serif;}
       .color1{background-color: White;}
+      .color2{background-color: #a7a7a7; }
+      .color3{background-color: #99c864; }
     </style>
   <body>
 
@@ -25,8 +27,8 @@
 
           <ul class="nav navbar-nav navbar-right">
              <li><a href="#"><h4><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Home </h4></a></li>
-            <li><a href="list/index"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp; List </h4></a></li>
-            <li><a href="reser/index"><h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp; จอง </h4></a></li>
+            <li><a href="../list/index"><h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp; List </h4></a></li>
+            <li><a href="../reser/index"><h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp; จอง </h4></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -41,7 +43,7 @@
         <div class="panel-body color1">
             <div class="container">
                   <center>
-                <h1><strong> My Term </strong></hr>
+                <h1> MY TEAM </h1>
                 </center>
               <hr>
               <br>
@@ -57,7 +59,62 @@
                 <br><br><br><br>
           </div>
         </div>
-      </div>
+        <div class="panel-body color2">
+            <div class="container">
+                <h1> BOUNDARY </h1>
+                <hr>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="panel panel-default ">
+                      <div class="panel-body">
+                      <center><img src="https://image.flaticon.com/icons/svg/284/284414.svg" alt="Responsive image" class="img-circle" width="100" height="100" ></center>
+                      <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สามารถเลือกได้ว่า จะจองยานพาหนะประเภทใดโดยคิดค่าจองยานพาหนะเเต่ละประเภทเป็นรายวัน</p>
+                      <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default ">
+                        <div class="panel-body">
+                      <center><img src="https://image.flaticon.com/icons/svg/320/320331.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                      <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผู้ขับขี่ยานพาหนะซึ่งยานพาหนะแต่ละประเภทนั้นจุคนต่างกันมีผู้เชี่ยวชาญพิเศษในการขับขี่ประจําตําแหน่งผู้ขับขี่ยานพาหนะนั้นๆ</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default ">
+                        <div class="panel-body">
+                      <center><img src="https://image.flaticon.com/icons/svg/201/201623.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                      <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แผนการเดินทางโดยลูกค้าต้องบอกแผนการเดินทางที่ชัดเจนเพื่อการวางแผนการใช้เชื้อเพลิงที่ชัดเจน</p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="panel panel-default ">
+                      <div class="panel-body">
+                        <center><img src="https://image.flaticon.com/icons/svg/305/305139.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                        <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ระยะเวลาการจองทั้งนี้บริษัทยังเป็นขั้น Beta จึงจํากัดเป็นการจองไม่เกิน 1 เดือน</p>
+                        <br>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default ">
+                        <div class="panel-body">
+                          <center><img src="https://image.flaticon.com/icons/svg/201/201574.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
+                          <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เบอร์โทรศัพท์ บริษัทจะเก็บเบอร์โทรศัพท์ของลูกค้าหนึ่งเบอร์ เพื่อโทรกลับไปสอบถามความพึงพอใจในการใช้งาน</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body color3">
+          <div class="container">
+
+          </div>
+        </div>
     <footer>
 
     </footer>
