@@ -50,10 +50,11 @@ $baseUrl=\Yii::getAlias('@web');
                 </div>
               </div>
               <form action="<?=$baseUrl."/reser/save" ?>" method="get">
-                ชื่อลูกค้า <input type="text" name="cusname">
-                ระยะทาง <input type="text" name="distance">
-                วันไป <input type="date" name="rentdate">
-                  วันกลับ <input type="date" name="backdate">
+			                ชื่อลูกค้า <input type="text" name="cusname">
+			                ระยะทาง <input type="text" name="distance">
+			                วันไป <input type="date" name="rentdate">
+			                  วันกลับ <input type="date" name="backdate">
+       			<input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">        
                 <input type="submit" value="บันทึก">
               </form>
             </div>

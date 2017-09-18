@@ -12,16 +12,19 @@ $baseUrl=\Yii::getAlias('@web');
             <div class="row">
               <input type="hidden" name="id" value="">
               <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail"></div>
-              <div class="col-md-6"><div class="form-group">
-                  <h1>ชื่อเรือ : </h1>
+              <div class="col-md-6">
+                <div class="form-group">
+                  ชื่อเรือ : <input type="text" name="" value="">
                 </div>
                 <div class="form-group">
-                  <h1>ประเภท : </h1>
+                  <label for="sel1">เลือกขนาดของเรือ</label>
+                  <select class="form-control" id="sel1">
+                    <option>เล็ก</option>
+                    <option>กลาง</option>
+                    <option>ใหญ่</option>
+                  </select>
                 </div>
 
-                <div class="form-group">
-                      <h1>จำนวนที่นั่ง : </h1>
-                </div>
 
                     <!-- <div class="form-group">
                         <label  class="col-sm-2 control-label">วันที่จอง</label>
