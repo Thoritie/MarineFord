@@ -10,7 +10,8 @@ $baseUrl=\Yii::getAlias('@web');
 
           <div class="panel-body">
             <div class="row">
-              <input type="hidden" name="id" value="<?=$model['_id'] ?>">
+              <input type="hidden" name="id" value="<?=$model['boat_id'] ?>">
+
               <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail"></div>
               <div class="col-md-6"><div class="form-group">
                   <h1>ชื่อเรือ : <?=$model['name'] ?></h1>

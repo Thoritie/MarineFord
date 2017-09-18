@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <title>Marine Ford</title>
     <style>
-      .item-fix{position: absolute;top: 400px;left: 580px; color:White; font-size:120px; font-family:sans-serif;}
-      .color1{background-color: White;}
-      .color2{background-color: #a7a7a7; }
-      .color3{background-color: #99c864; }
+      .item-fix{color:#ffb000; font-size:120px; font-family:sans-serif;}
+      .color1{background-color: #100a40;}
+      .color2{background-color: #a7a7a7;font-size: 16px}
+      .color3{background-color: #92dbfe; font-size:80px }
+      .color4{background-color:White; font-size:80px}
+      .color5{background-color: White; }
+
     </style>
   <body>
 
@@ -35,12 +38,20 @@
     </div>
     </nav>
   <br><br><br>
-<div class="container">
-<p class="item-fix"><strong><u> MarineFord.</u></strong></p>
-</div>
-  <img src="https://2.bp.blogspot.com/-ttHvhLwGki4/V7pdThnOU0I/AAAAAAACmlM/SOA-Oi0iLwgGbRJ4HbDfYYww0c8MNusMwCLcB/s1600/sailing-boat-1593613.jpg" class="img-responsive" alt="Responsive image" style="width:100%">
-      <div class="panel panel-default color1">
-        <div class="panel-body color1">
+  <div class="panel-body color1">
+      <div class="container">
+          <div class="container">
+            <center>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <p class="item-fix"><strong><u> MarineFord.</u></strong></p>
+              <br>
+                <img src="https://image.flaticon.com/icons/svg/198/198367.svg" alt="Responsive image"  width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </center>
+        </div>
+      </div>
+    </div>
+        <div class="panel-body color5">
             <div class="container">
                   <center>
                 <h1><strong> MY TEAM </strong></h1>
@@ -59,6 +70,21 @@
                 <br><br><br><br>
           </div>
         </div>
+
+        <div class="panel-body color3">
+          <div class="container">
+            <div class="col-md-4">
+            <img src="https://image.flaticon.com/icons/png/512/486/486358.png" alt="Responsive image" class=" " width="300" height="300"></center>
+
+          </div>
+          <div class="col-md-8">
+            <p><u>Marine ford</u>  </p><h1>คือ บริษัทให้เช่ายานพาหนะโดยสารทางน้ำ</h1>
+
+            <img src="https://image.flaticon.com/icons/svg/443/443890.svg" alt="Responsive image" class=" " width="100" height="100" align = 'right'></center>
+          </div>
+          </div>
+        </div>
+
         <div class="panel-body color2">
             <div class="container">
                 <center><h1><strong> BOUNDRY </strong></h1></center>
@@ -86,7 +112,7 @@
                         <div class="panel-body">
                       <center><img src="https://image.flaticon.com/icons/svg/201/201623.svg" alt="Responsive image" class="img-circle" width="100" height="100"></center>
                       <p><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แผนการเดินทางโดยลูกค้าต้องบอกแผนการเดินทางที่ชัดเจนเพื่อการวางแผนการใช้เชื้อเพลิงที่ชัดเจน</p>
-                      <br>
+
                     </div>
                   </div>
                 </div>
@@ -127,11 +153,24 @@
                 </div>
             </div>
         </div>
-        <div class="panel-body color3">
-          <div class="container">
-          <br>
+        <div class="panel-body color4">
+          <center>
+            <div class="col-md-15">
+              <p>THANK YOU</p>
+              <p><strong>#TTFDK</strong></p>
+              <br>
+            </div>
+            <div class="col-md-15">
+            <img src="https://image.flaticon.com/icons/svg/145/145862.svg" alt="Responsive image" class="img-circle" width="300" height="300">
+            <img src="https://image.flaticon.com/icons/svg/163/163829.svg" alt="Responsive image" class="img-circle" width="300" height="300">
+            <img src="https://image.flaticon.com/icons/svg/145/145867.svg" alt="Responsive image" class="img-circle" width="300" height="300">
+            <img src="https://image.flaticon.com/icons/svg/163/163809.svg" alt="Responsive image" class="img-circle" width="300" height="300">
+            <img src="https://image.flaticon.com/icons/svg/163/163827.svg" alt="Responsive image" class="img-circle" width="300" height="300">
+            <br><br>
           </div>
+        </center>
         </div>
+
     <footer>
 
     </footer>
