@@ -1,4 +1,5 @@
 <?php
+use yii\widgets\LinkPager;
 use yii\helpers\Html;
 $baseUrl=\Yii::getAlias('@web');
  ?>
@@ -14,7 +15,7 @@ $baseUrl=\Yii::getAlias('@web');
               <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail"></div>
               <div class="col-md-6">
                 <div class="form-group">
-                  ชื่อเรือ : <input type="text" name="" value="">
+                  เรือ : <input type="text" name="" value="">
                 </div>
                 <div class="form-group">
                   <label for="sel1">เลือกขนาดของเรือ</label>

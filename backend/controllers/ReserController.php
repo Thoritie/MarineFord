@@ -32,7 +32,6 @@ class ReserController extends Controller
     {
         //Hardcode Id Boat
         $boats = Boat::findOne("59b78ca826ecdff35186e115");
-        $this->layout = "@backend/themes/adminlte/layouts/index";
 
         return $this->render('index',
         [
