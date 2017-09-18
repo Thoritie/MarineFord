@@ -43,7 +43,7 @@ class ReserController extends Controller
 
     public function actionReserboat()
     {
-      $this->layout = "@backend/themes/adminlte/layouts/index";
+    //   $this->layout = "@backend/themes/adminlte/layouts/index";
     	$request = Yii::$app->request;
     	$id = $request->get('id',null);
 
@@ -105,7 +105,7 @@ class ReserController extends Controller
 
     	if($modelCus->save()){
     		echo "success";
-            
+
     	}else{
     		echo "unsuccess";
     	}
