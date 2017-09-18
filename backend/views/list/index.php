@@ -1,41 +1,62 @@
 <?php
 use yii\widgets\LinkPager;
 $this->title = 'List Boat';
-$this->params['breadcrumbs'][] = $this->title;
+// $this->params['breadcrumbs'][] = $this->title;
 $baseUrl = \Yii::getAlias('@web');
 ?>
 
-<div class="container">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="pull-left">Boat List</h4>
-			<form class="input-group" action="" method="get">
-				<input type="text" name="search" value="<?php echo $input; ?>" placeholder="Search.." class="form-control pull-right" style="width:200px;">
-				<div class="input-group-btn">
-					<button class="btn btn-primary btn-sm" type="submit">
-						<i class="glyphicon glyphicon-search"></i>
-					</button>
-				</div>
-			</form>
-		</div>
-		<div class="panel panel-body">
-			<?php foreach ($result as $var){ ?>
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail" >
-			      <img class="img-responsive img-thumbnail" src="" alt=" " style="width:250px;height:250px";>
-			      <div class="caption">
-			        <h3 class="card-title">Name : <?=$var['name']?></h3>
-							  <p class="card-text">Boat id : <?=$var['boat_id']?></p>
-			          <p class="card-text">Type : <?=$var['type']?></p>
-			          <p class="card-text">Max of seat : <?=$var['maxseat']?></p>
-								<a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
-			      </div>
-			    </div>
-			  </div>
-			<?php }?>
-		</div>
-		<div class="text-center">
-			<?= LinkPager::widget(['pagination' => $pagination]) ?>
-		</div><br><br>
+<form class="input-group" action="" method="get">
+	<input type="text" name="search" value="<?php echo $input; ?>" placeholder="Search.." class="form-control pull-right" style="width:200px;">
+	<div class="input-group-btn">
+		<button class="btn btn-primary btn-sm" type="submit">
+			<i class="glyphicon glyphicon-search"></i>
+		</button>
 	</div>
+</form>
+
+<!--
+<div class="ui category search">
+<div class="ui icon input">
+<input class="prompt" type="text"  name="search"  value="<?php echo $input; ?>" placeholder="Search boat...">
+<i class="search icon"></i>
+</div>
+<div class="results"></div>
+</div> -->
+<div class="ui centered">
+
+<div class="ui link cards">
+
+<?php foreach ($result as $var){ ?>
+  <div class="card">
+    <div class="image">
+      <img src="https://www.w3schools.com/w3css/img_avatar3.png">
+    </div>
+    <div class="content">
+      <div class="header"><?=$var['name']?></div>
+      <div class="meta">
+        <a><?=$var['type']?></a>
+      </div>
+      <div class="description">
+		Boat id : <?=$var['boat_id']?>
+        Matthew is an interior designer living in New York.
+
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+		<a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
+
+      </span>
+      <span>
+        <i class="user icon"></i>
+        Maxseat <?=$var['maxseat']?>
+      </span>
+    </div>
+  </div>
+  <?php }?>
+  <br><br>
+</div>
+<div class="test-center">
+<?= LinkPager::widget(['pagination' => $pagination]) ?>
+</div>
 </div>

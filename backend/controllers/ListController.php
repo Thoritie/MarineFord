@@ -31,7 +31,8 @@ class ListController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "@backend/themes/adminlte/layouts/index";
+        // $this->layout = "@backend/themes/adminlte/layouts/index";
+        
         $request = Yii::$app->request;
       	$search = $request->get('search',null);
 
