@@ -59,26 +59,4 @@ class ListController extends Controller
           'pagination' => $pagination,
         ]);
     }
-
-    public function actionTestlist()
-    {
-        $this->layout = "@backend/themes/adminlte/layouts/index";
-        $query = Boat::find();
-        $pagination = new Pagination([
-            'defaultPageSize' => 5,
-            'totalCount' => $query->count(),
-        ]);
-
-        $boats = $query->orderBy('boat_id')
-            ->offset($pagination->offset)
-            ->limit($pagination->limit)
-            ->all();
-
-
-        return $this->render('testlist',
-        [
-          'result' => $boats,
-          'pagination' => $pagination,
-        ]);
-    }
 }
