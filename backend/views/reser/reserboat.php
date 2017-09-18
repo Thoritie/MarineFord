@@ -52,8 +52,8 @@ $baseUrl=\Yii::getAlias('@web');
               <form action="<?=$baseUrl."/reser/save" ?>" method="get">
                 ชื่อลูกค้า <input type="text" name="cusname">
                 ระยะทาง <input type="text" name="distance">
-                วันไป <input type="text" name="rentdate">
-                  วันกลับ <input type="text" name="backdate">
+                วันไป <input type="date" name="rentdate">
+                  วันกลับ <input type="date" name="backdate">
                 <input type="submit" value="บันทึก">
               </form>
             </div>
