@@ -25,6 +25,9 @@ $baseUrl=\Yii::getAlias('@web');
                 </div>
               </div>
               <form action="<?=$baseUrl."/reser/save" ?>" method="get">
+                      ชื่อเรือ :<?=$model ['name'] ?><br><br>
+                      ประเภท : <?=$model['type'] ?><br><br>
+                      จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br>
 			                ชื่อลูกค้า <input type="text" name="cusname">
 			                ระยะทาง <input type="text" name="distance">
 			                วันไป <input type="date" name="rentdate">
