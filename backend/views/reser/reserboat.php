@@ -2,8 +2,7 @@
 use yii\helpers\Html;
 $baseUrl=\Yii::getAlias('@web');
  ?>
-      <br><br><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อเรือ :<?=$model ['name'] ?></h1>
-      <br>
+  <br><br><br><br>
 
     <div class="container">
       <div class="panel panel-default">
@@ -12,7 +11,8 @@ $baseUrl=\Yii::getAlias('@web');
             <div class="row">
               <input type="hidden" name="id" value="<?=$model['boat_id'] ?>">
 
-              <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
+              <div class="col-md-5"><center><h1>ชื่อเรือ :<?=$model ['name'] ?></h1></center><br><br>
+                <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
                 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ประเภท : <?=$model['type'] ?>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    จำนวนที่นั่ง : <?=$model['maxseat'] ?></h3>
@@ -20,16 +20,19 @@ $baseUrl=\Yii::getAlias('@web');
              </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  ชื่อเรือ :<?=$model ['name'] ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ประเภท : <?=$model['type'] ?><br><br>
+                  <center><h2>ข้อมูลเกี่ยวกับลูกค้า</h2></center><br><br>
+                  <h4>ชื่อเรือ :<?=$model ['name'] ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ประเภท : <?=$model['type'] ?>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br><br>
+                  ชื่อลูกค้า <input type="text" name="cusname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    อีเมล<input type="text"><br><br><br>
+                  รหัสบัตรประชาชน <input type="text"><br><br><br>
 
-                  จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br>
-                  ชื่อลูกค้า <input type="text" name="cusname"><br><br>
-                  รหัสบัตรประชาชน <input type="text"><br><br>
-                  อีเมล<input type="text"><br><br>
 
-                  ระยะทาง <input type="text" name="distance"><br><br>
-                  วันไป <input type="date" name="rentdate"><br><br>
+                  ระยะทาง <input type="text" name="distance"><br><br><br>
+                  วันไป <input type="date" name="rentdate"><br><br><br<h4>
 
                       </div>
                     </div>
@@ -48,6 +51,7 @@ $baseUrl=\Yii::getAlias('@web');
 			                ระยะทาง <input type="text" name="distance"><br><br>
 			                วันไป <input type="date" name="rentdate"><br><br>
 			                วันกลับ <input type="date" name="backdate"> -->
+                      
        			<input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">
                 <input type="submit" value="บันทึก">
               </form>
