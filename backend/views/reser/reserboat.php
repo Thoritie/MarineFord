@@ -4,37 +4,39 @@ $baseUrl=\Yii::getAlias('@web');
  ?>
   <br><br><br><br>
 
+
     <div class="container">
       <div class="panel panel-default">
+
+
 
           <div class="panel-body">
             <div class="row">
               <input type="hidden" name="id" value="<?=$model['boat_id'] ?>">
 
-              <div class="col-md-5"><center><h1>ชื่อเรือ :<?=$model ['name'] ?></h1></center><br><br>
+              <div class="col-md-5"><center><h1><?=$model ['name'] ?></h1></center><br><br>
                 <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
                 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ประเภท : <?=$model['type'] ?>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    จำนวนที่นั่ง : <?=$model['maxseat'] ?></h3>
 
              </div>
-              <div class="col-md-6">
-                <div class="form-group">
+              <div class="col-md-6"><h5>
+
+                  <div class="form-group">
                   <center><h2>ข้อมูลเกี่ยวกับลูกค้า</h2></center><br><br>
-                  <h4>ชื่อเรือ :<?=$model ['name'] ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ประเภท : <?=$model['type'] ?>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br><br>
-                  ชื่อลูกค้า <input type="text" name="cusname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    อีเมล<input type="text"><br><br><br>
-                  รหัสบัตรประชาชน <input type="text"><br><br><br>
+
+                  ชื่อลูกค้า <input type="text" name="cusname">&nbsp;&nbsp;&nbsp;
+                  อีเมล<input type="text"><br><br><br>
+                  หมายเลขบัตรประชาชน <input type="text"><br><br><br>
+                  สถานที่ไป<input type="text"><br><br><br>
+                  วันไป <input type="date" name="rentdate"><br><br><br>
+                  วันกลับ <input type="date" name="backdate"><br><br><br>
+                  ระยะทาง <input type="text" name="distance"><br><br><br><h5>
 
 
-                  ระยะทาง <input type="text" name="distance"><br><br><br>
-                  วันไป <input type="date" name="rentdate"><br><br><br<h4>
 
-                      </div>
+                    </div>
                     </div>
                 </div>
                 </div>
@@ -82,6 +84,9 @@ $baseUrl=\Yii::getAlias('@web');
                                                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="ui secondary button"value="จอง">
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                            <input type="submit" class="ui secondary button"value="จอง">
               </form>
+
+
             </div>
