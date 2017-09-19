@@ -27,13 +27,11 @@ $baseUrl = \Yii::getAlias('@web');
 		    </div>
 		    <div class="content">
 		      <div class="header"><?=$var['name']?></div>
-		      <div class="meta">
-		        <a><?=$var['type']?></a>
+		      <div class="description">
+		    Boat Type :  <a><?=$var['type']?></a>
 		      </div>
 		      <div class="description">
 				Boat id : <?=$var['boat_id']?>
-		        Matthew is an interior designer living in New York.
-
 		      </div>
 		    </div>
 		    <div class="extra content">
