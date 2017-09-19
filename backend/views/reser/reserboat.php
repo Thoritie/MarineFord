@@ -28,9 +28,10 @@ $baseUrl=\Yii::getAlias('@web');
                       ชื่อเรือ :<?=$model ['name'] ?><br><br>
                       ประเภท : <?=$model['type'] ?><br><br>
                       จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br>
+                      ชื่อลูกค้า <input type="text" name="cusname"><br><br>
                       รหัสบัตรประชาชน <input type="text"><br><br>
                       อีเมล<input type="text"><br><br>
-			                ชื่อลูกค้า <input type="text" name="cusname"><br><br>
+
 			                ระยะทาง <input type="text" name="distance"><br><br>
 			                วันไป <input type="date" name="rentdate"><br><br>
 			                วันกลับ <input type="date" name="backdate">
