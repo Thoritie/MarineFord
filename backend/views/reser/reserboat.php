@@ -15,12 +15,11 @@ $baseUrl=\Yii::getAlias('@web');
             <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
 
             <h2 class="ui horizontal inverted divider">
-                <?=$model ['name'] ?>
-            </h2>
-            <center><h2>
-            <p>category : <?=$model['type'] ?></p>
-            <p>Seating Capacity : <?=$model['maxseat'] ?></p></h2></center>
 
+            </h2><br>
+            <h3 class="ui dividing header"><i class="ship icon"></i>Namw :<?=$model ['name'] ?></h3>
+            <h3 class="ui dividing header"><i class="map pin icon"></i>Ategory : <?=$model['type'] ?></h3>
+            <h3 class="ui dividing header"><i class="add user icon"></i>Seating Capacity : <?=$model['maxseat'] ?></h3>
 
         </div>
       </div>
@@ -53,8 +52,7 @@ $baseUrl=\Yii::getAlias('@web');
                     <label>ID</label>
                     <div class="fields">
                         <div class="twelve wide field">
-                            <input type="text" name="shipping[address]" placeholder="
-ID card number">
+                            <input type="text" name="shipping[address]" placeholder="ID card number">
                         </div>
                     </div>
                 </div>
@@ -83,7 +81,7 @@ ID card number">
           <label>Day away</label>
           <div class="fields">
               <div class="twelve wide field">
-                  <input type="date" name="shipping[address]" placeholder="วันออกเรือ">
+                  <input type="date" name=rentdate" placeholder="วันออกเรือ">
               </div>
           </div>
       </div>
@@ -92,7 +90,7 @@ ID card number">
           <div class="fields">
               <div class="twelve wide field">
 
-                  <input type="date" name="shipping[address]" placeholder="เรือกลับเข้าฝัง">
+                  <input type="date" name="backdate" placeholder="เรือกลับเข้าฝัง">
               </div>
           </div>
       </div>
@@ -107,7 +105,7 @@ ID card number">
 
         </div>
     </div>
-
-  <input type="submit" class="ui secondary button"value="Reservations">
+ <br>
+  <input type="submit" class="ui secondary right floated button"value="Reservations">
 
 </form>
