@@ -6,6 +6,7 @@ $baseUrl = \Yii::getAlias('@web');
 ?>
 <div class="panel panel-default">
 	<div class="panel-heading">
+
 		<form class="input-group" action="" method="get">
 			<input type="text" name="search" value="<?php echo $input; ?>" placeholder="Search.." class="form-control pull-right" style="width:200px;">
 			<div class="input-group-btn">
