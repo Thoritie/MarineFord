@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Html;
-$baseUrl=\Yii::getAlias('@web');
  ?>
   <br><br><br><br>
 
