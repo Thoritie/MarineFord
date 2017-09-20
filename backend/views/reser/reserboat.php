@@ -2,73 +2,91 @@
 use yii\helpers\Html;
 $baseUrl=\Yii::getAlias('@web');
  ?>
+  <br><br><br><br>
 
-      <br><br><br><br>
 
     <div class="container">
       <div class="panel panel-default">
+
+
 
           <div class="panel-body">
             <div class="row">
               <input type="hidden" name="id" value="<?=$model['boat_id'] ?>">
 
-              <div class="col-md-5"><img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail"></div>
-              <div class="col-md-6"><div class="form-group">
-                  <h1>ชื่อเรือ : <?=$model['name'] ?></h1>
-                </div>
-                <div class="form-group">
-                  <h1>ประเภท : <?=$model['type'] ?></h1>
-                </div>
+              <div class="col-md-5"><center><h1><?=$model ['name'] ?></h1></center><br><br>
+                <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ประเภท : <?=$model['type'] ?>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   จำนวนที่นั่ง : <?=$model['maxseat'] ?></h3>
 
-                <div class="form-group">
-                      <h1>จำนวนที่นั่ง : <?=$model['maxseat'] ?></h1>
-                </div>
+             </div>
+              <div class="col-md-6"><h5>
 
-                    <!-- <div class="form-group">
-                        <label  class="col-sm-2 control-label">วันที่จอง</label>
-                            <div class="col-xs-2 col-sm-4"><div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputtext" placeholder="2013-12-14" name="rentdate">
-                              </div>
-                            </div>
-                              <div class="form-group">
-                                <label  class="col-sm-2 control-label">ถึงวันที่</label>
-                                  <div class="col-xs-2 col-sm-4"><div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputtext" placeholder="2013-12-14" name="backdate">
-                                      </div>
-                                  </div>
-                              </div>
-                    </div><br><br><br> -->
-                        <!-- <div class="form-group">
-                            <label  class="col-sm-2 control-label">ระยะทาง</label>
-                                <div class="col-xs-2 col-sm-4"><div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputtext" placeholder="text" name="distance">
-                                  </div>
-                                </div>
-                      </div> -->
+                  <div class="form-group">
+                  <center><h2>ข้อมูลเกี่ยวกับลูกค้า</h2></center><br><br>
+
+                  ชื่อลูกค้า <input type="text" name="cusname">&nbsp;&nbsp;&nbsp;
+                  อีเมล<input type="text"><br><br><br>
+                  หมายเลขบัตรประชาชน <input type="text"><br><br><br>
+                  สถานที่ไป<input type="text"><br><br><br>
+                  วันไป <input type="date" name="rentdate"><br><br><br>
+                  วันกลับ <input type="date" name="backdate"><br><br><br>
+                  ระยะทาง <input type="text" name="distance"><br><br><br><h5>
+
+
+
+                    </div>
                     </div>
                 </div>
                 </div>
               </div>
-              <form action="<?=$baseUrl."/reser/save" ?>" method="get">
-			                ชื่อลูกค้า <input type="text" name="cusname">
-			                ระยะทาง <input type="text" name="distance">
-			                วันไป <input type="date" name="rentdate">
-			                  วันกลับ <input type="date" name="backdate">
-       			<input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">        
-                <input type="submit" value="บันทึก">
+               <form action="<?=$baseUrl."/reser/save" ?>" method="get">
+                      <!-- ชื่อเรือ :<?=$model ['name'] ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ประเภท : <?=$model['type'] ?><br><br>
+
+                      จำนวนที่นั่ง : <?=$model['maxseat'] ?><br><br>
+                      ชื่อลูกค้า <input type="text" name="cusname"><br><br>
+                      รหัสบัตรประชาชน <input type="text"><br><br>
+                      อีเมล<input type="text"><br><br>
+
+			                ระยะทาง <input type="text" name="distance"><br><br>
+			                วันไป <input type="date" name="rentdate"><br><br>
+			                วันกลับ <input type="date" name="backdate">  -->
+
+       			<input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                            <input type="submit" class="ui secondary button"value="จอง">
               </form>
+
+
             </div>
-                    <!-- <div class="panel panel-default">
-                      <div class="panel-body">
-                        <div class="form-group">
-                            <label  class="col-sm-1 control-label">ชื่อลูกค้า</label>
-                                <div class="col-xs-5 col-sm-5"><div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputtext" placeholder="text" name="cusname">
-                                  </div>
-                                </div>
-                        </div>
-
-
-                        <br><br><br>
-                      </div>
-                    </div> -->
