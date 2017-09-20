@@ -4,58 +4,93 @@ $this->title = 'List Boat';
 // $this->params['breadcrumbs'][] = $this->title;
 $baseUrl = \Yii::getAlias('@web');
 ?>
-<div class="panel panel-default">
-	<div class="panel-heading">
 
-		<form class="input-group" action="" method="get">
-			<input type="text" name="search" value="<?php echo $input; ?>" placeholder="Search.." class="form-control pull-right" style="width:200px;">
-			<div class="input-group-btn">
-				<button class="btn btn-primary btn-sm" type="submit">
-					<i class="glyphicon glyphicon-search"></i>
-				</button>
-			</div>
-		</form>
-	</div>
-	<div class="panel-body">
-		<div class="ui centered">
+<div class="ui grid">
+  <div class="four wide column">
+    <div class="ui vertical fluid tabular menu">
+      <a class="item active">
+        Booking
+      </a>
+      <a class="item">
+        Boat
+      </a>
+    </div>
+  </div>
+  <div class="twelve wide stretched column">
+    <div class="ui segment">
 
-		<div class="ui link cards" style="margin-left:15px;">
+   	 <div class="panel">
+   	 	<div class="panel-heading">
 
-		<?php foreach ($result as $var){ ?>
-		  <div class="card">
-		    <div class="image">
-		      <img src="https://www.w3schools.com/w3css/img_avatar3.png">
-		    </div>
-		    <div class="content">
-		      <div class="header"><?=$var['name']?></div>
-		      <div class="description">
-		    Boat Type :  <a><?=$var['type']?></a>
-		      </div>
-		      <div class="description">
-				Boat id : <?=$var['boat_id']?>
-		      </div>
-		    </div>
-		    <div class="extra content">
-		      <span class="right floated">
-				<a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
+   	 		<form class="input-group" action="" method="get">
+   	 			<input type="text" name="search" value="<?php echo $input; ?>" placeholder="Search.." class="form-control pull-right" style="width:200px;">
+   	 			<div class="input-group-btn">
+   	 				<button class="btn btn-primary btn-sm" type="submit">
+   	 					<i class="glyphicon glyphicon-search"></i>
+   	 				</button>
+   	 			</div>
+   	 		</form>
+   	 	</div>
 
-		      </span>
-		      <span>
-		        <i class="user icon"></i>
-		        Maxseat <?=$var['maxseat']?>
-		      </span>
-		    </div>
-		  </div>
-		  <?php }?>
-		  <br><br>
-		</div>
-		<div class="test-center">
-		<?= LinkPager::widget(['pagination' => $pagination]) ?>
-		</div>
-		</div>
+   	 	<div class="panel-body">
 
-	</div>
+				<div class="ui three column grid">
+				<?php foreach ($result as $var){ ?>
+				  <div class="column">
+				    <div class="ui fluid link card">
+				      <div class="image">
+				        <img src="https://www.w3schools.com/w3css/img_avatar3.png">
+				      </div>
+
+					  <div class="content">
+						<div class="header"><?=$var['name']?></div>
+						<div class="description">
+					  	Boat Type :  <a><?=$var['type']?></a>
+						</div>
+						<div class="description">
+						  Boat id : <?=$var['boat_id']?>
+						</div>
+						<span>
+						  <i class="user icon"></i>
+						  Maxseat <?=$var['maxseat']?>
+						</span>
+						<span class="right floated">
+						  <a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
+
+						</span>
+					  </div>
+					  <!-- <div class="extra content">
+						<span class="right floated">
+						  <a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
+
+						</span>
+						<span>
+						  <i class="user icon"></i>
+						  Maxseat <?=$var['maxseat']?>
+						</span>
+					</div> -->
+
+				    </div>
+
+
+				  </div>
+				  <?php }?>
+
+
+				</div>
+   	 		<div class="text-center">
+   	 		<?= LinkPager::widget(['pagination' => $pagination]) ?>
+   	 		</div>
+
+   	 	</div>
+   	 </div>
+ </div>
 </div>
+</div>
+
+
+
+
 
 <!--
 <div class="ui category search">
