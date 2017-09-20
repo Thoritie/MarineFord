@@ -17,9 +17,9 @@ $baseUrl=\Yii::getAlias('@web');
             <h2 class="ui horizontal inverted divider">
                 <?=$model ['name'] ?>
             </h2>
-            <p><strong>ชื่อเรือ :<?=$model ['name'] ?></strong></p>
-            <p>ประเภท : <?=$model['type'] ?></p>
-            <p>จำนวนที่นั่ง : <?=$model['maxseat'] ?></p>
+            <center><h2>
+            <p>category : <?=$model['type'] ?></p>
+            <p>Seating Capacity : <?=$model['maxseat'] ?></p></h2></center>
 
 
         </div>
