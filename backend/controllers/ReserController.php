@@ -69,9 +69,10 @@ class ReserController extends Controller
 
     	$id = $request->get('id',null);
     	$cusname = $request->get('cusname',null);
+      $idcard = $request->get('idcard',null);
         $rentdate = $request->get('rentdate',null);
         $backdate = $request->get('backdate',null);
-        $distance = $request->get('distance',null);
+        $destination = $request->get('destination',null);
         $boatid = $request->get('boat_id',null);
 
     	$baseUrl = \Yii::getAlias('@web');
@@ -88,11 +89,12 @@ class ReserController extends Controller
 
     	// $modelCus->idcustomer = $num+1;
         $modelCus->cusname = $cusname;
+        $modelCus->idcard = $idcard;
         $modelCus->bill =[
                 'idboat' => $boatid,
                 'rentdate' => $rentdate,
                 'backtdate' => $backdate,
-                'distance' => $distance,
+                'destination' => $destination,
         ];
         // $modelCus->bill->idbill = $numbill+1;
         // $modelCus->bill->['idboat']= $boats->boat_id;

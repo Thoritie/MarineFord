@@ -26,7 +26,7 @@ $baseUrl=\Yii::getAlias('@web');
       <div class="column">
         <div class="ui segment very padded">
             <!-- form begin -->
-            <form class="ui form">
+            <form class="ui form" action="<?=$baseUrl."/reser/save" ?>" method="get">
                 <h3 class="ui dividing header"><i class="tag icon"></i>Customer Information</h3>
                 <div class="field">
                     <label>Name</label>
@@ -34,7 +34,7 @@ $baseUrl=\Yii::getAlias('@web');
                     <div class="field">
                         <div class="field">
                           <div class="twelve wide field">
-                            <input type="text" <input type="text" name="cusname" placeholder="Name">
+                            <input type="text" name="cusname" placeholder="Name">
                         </div>
                       </div>
                     </div>
@@ -43,16 +43,16 @@ $baseUrl=\Yii::getAlias('@web');
                     <label>Email Address</label>
                     <div class="fields">
                         <div class="twelve wide field">
-                            <input type="text" name="shipping[address]" placeholder="email">
+                            <input type="text" name="email" placeholder="email">
                         </div>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label>ID</label>
+                    <label>ID Card.</label>
                     <div class="fields">
                         <div class="twelve wide field">
-                            <input type="text" name="shipping[address]" placeholder="ID card number">
+                            <input type="text" name="idcard" placeholder="ID card number">
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $baseUrl=\Yii::getAlias('@web');
         <div class="two fields">
             <div class="field">
                 <label>State</label>
-                <select class="ui fluid dropdown">
+                <select class="ui fluid dropdown" name="destination">
                     <option value="">State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -81,7 +81,7 @@ $baseUrl=\Yii::getAlias('@web');
           <label>Day away</label>
           <div class="fields">
               <div class="twelve wide field">
-                  <input type="date" name=rentdate" placeholder="วันออกเรือ">
+                  <input type="date" name="rentdate" placeholder="วันออกเรือ">
               </div>
           </div>
       </div>
@@ -96,16 +96,10 @@ $baseUrl=\Yii::getAlias('@web');
       </div>
     </div>
     <div class="fields">
-
-
         <div class="six wide field">
-
-
-
-
         </div>
     </div>
- <br>
-  <input type="submit" class="ui secondary right floated button"value="Reservations">
 
+  <input type="submit" class="ui secondary button"value="Reservations">
+  <input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">
 </form>
