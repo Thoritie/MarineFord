@@ -30,13 +30,15 @@ $baseUrl=\Yii::getAlias('@web');
               <h3>
               <i class="list icon"></i>list
             </h3></a>
+            <?php if (isset($user)): ?>
             <a class="item" href="reser/index">
               <h3>
               <i class="add to cart icon"></i>จอง
-            </h3></a></a>
+            </h3></a>
+            <?php endif; ?>
             <div class="right item">
               <?php if (isset($user)): ?>
-              <?=$user->cusname?> 
+              <?=$user->cusname?> &nbsp;&nbsp;&nbsp;
                 <a class="ui inverted button" href="<?=$baseUrl."/auth/logout"?>">Log Out</a>
               <?php else: ?>
                 <a class="ui inverted button" href="<?=$baseUrl."/auth/login"?>">Log In</a>

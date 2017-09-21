@@ -19,7 +19,7 @@ $baseUrl=\Yii::getAlias('@web');
             </h2>
             <center><h2>
             <p>category : <?=$model['type'] ?></p>
-            <p>Seating Capacity : <?=$model['maxseat'] ?></p></h2></center>
+            <p>Seating Capacity : <?=$model['maxseat'] ?> Seat</p></h2></center>
 
 
         </div>
@@ -35,7 +35,7 @@ $baseUrl=\Yii::getAlias('@web');
                     <div class="field">
                         <div class="field">
                           <div class="twelve wide field">
-                            <input type="text" name="cusname" placeholder="Name">
+                            <input type="text" name="cusname" value="<?php echo $user['cusname'] ?>" placeholder="Name">
                         </div>
                       </div>
                     </div>
@@ -44,20 +44,10 @@ $baseUrl=\Yii::getAlias('@web');
                     <label>Email Address</label>
                     <div class="fields">
                         <div class="twelve wide field">
-                            <input type="text" name="email" placeholder="email">
+                            <input type="text" name="email" value="<?php echo $user['email'] ?>" placeholder="email">
                         </div>
                     </div>
                 </div>
-
-                <div class="field">
-                    <label>ID Card.</label>
-                    <div class="fields">
-                        <div class="twelve wide field">
-                            <input type="text" name="idcard" placeholder="ID card number">
-                        </div>
-                    </div>
-                </div>
-                <br>
 
         <h3 class="ui dividing header"><i class="flag icon"></i>Sailing Information</h3>
         <div class="two fields">
@@ -71,7 +61,6 @@ $baseUrl=\Yii::getAlias('@web');
                     <option value="AR">Arkansas</option>
                     <option value="CA">California</option>
                     <option value="CO">Colorado</option>
-
                 </select>
         </div>
     </div>

@@ -45,10 +45,18 @@ class ReserController extends Controller
     //   $this->layout = "@backend/themes/adminlte/layouts/index";
     	$request = Yii::$app->request;
     	$id = $request->get('id',null);
+      $session = Yii::$app->session;
+
+      if($session->has('user')){
+        $user  = $session->get('user');
+      }else {
+        $user = null;
+      }
 
     	$model = Boat::findOne($id);
     	return $this->render('Reserboat', [
-    			 'model' => $model
+    			 'model' => $model,
+           'user' => $user
     	]);
     }
 
