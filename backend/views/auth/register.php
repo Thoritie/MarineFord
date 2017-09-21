@@ -38,7 +38,7 @@ $baseUrl=\Yii::getAlias('@web');
 	      		<label>Address</label>
 	        	<textarea class="form-control" name="address" placeholder="กรอกข้อมูลที่อยู่โดยละเอียดน่ะค่ะ" rows="3"></textarea>
 	      	</div>
-	  		<div class="btn btn-primary" tabindex="0">Submit</div>
+	  		<button class="btn btn-primary" type="submit">Submit</button>
 	  		</div>
 		</form>
 	</div>
