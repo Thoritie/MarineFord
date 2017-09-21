@@ -23,11 +23,14 @@ class Customer extends \yii\mongodb\ActiveRecord
           '_id',
           'password',
           'email',
-          'idcard',
           'address',
           'phone',
           'cusname',
         	'bill',
+          'idboat',
+          'rentdate',
+          'backtdate',
+          'destination'
         ];
     }
 
@@ -37,7 +40,7 @@ class Customer extends \yii\mongodb\ActiveRecord
     public function rules()
     {
         return [
-            [['_id','email', 'cusname', 'idcard', 'bill', 'password','phone' ,'address'], 'safe']
+            [['_id','email', 'cusname', 'bill', 'password','phone' ,'address' ,'idboat','rentdate',  'backtdate',  'destination'], 'safe']
         ];
     }
 
