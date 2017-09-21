@@ -68,7 +68,7 @@ $baseUrl=\Yii::getAlias('@web');
       </div>
     </div>
 <br>
-    <div class="ui equal width center aligned padded grid">
+    <!-- <div class="ui equal width center aligned padded grid">
       <div class="row">
         <div class="White column">
           <h1><strong>MY TEAM</strong></h1>
@@ -84,12 +84,139 @@ $baseUrl=\Yii::getAlias('@web');
             </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="ui equal width center aligned padded grid">
-      <div class="row">
+    <!-- <div class="ui massive blue animated button" tabindex="0">
+  <div class="visible content">Next</div>
+  <div class="hidden content">
+    <i class="Angle Double Right"></i>
+  </div>
+  </div> -->
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="ui  width center aligned padded grid">
+<div class="row">
+<div class="White  column">
+<div class="ui container">
+<h1>REVIEW</h1>
+<hr>
+<div class="container very padded">
+<div class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="https://lh3.googleusercontent.com/Mq6W2e2VcqvnUie7x6mW597jCy3n7eEZcFN6rT6cP1l4cbb5lO5VSmKwZDJDORcNJLM=w300">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="http://img.freepik.com/vettori-gratuito/sfondo-carino-barca_23-2147552049.jpg?size=338&ext=jpg">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="container very padded">
+<div class="ui three column grid">
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui fluid link card">
+      <div class="image">
+        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+      </div>
+      <div class="content">
+        <center>
+          <h3>Elliot Fu</h3>
+          <hr>
+        </center>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+        <div class="ui  width center aligned padded grid">
+        <div class="row">
         <div class="teal  column">
-          <div class="ui container">
+        <div class="ui container">
             <h1><strong>BOUNDRY</strong></h1>
               <hr>
               <div class="ui compact segments">
@@ -140,14 +267,18 @@ $baseUrl=\Yii::getAlias('@web');
     </div>
     <div class="ui equal width center aligned padded grid">
       <div class="row">
-        <div class="White  column">
-          <h1>THANK YOU</h1>
-             <h3><strong>#TTFDK</strong></h3>
-          <img class="ui top aligned medium image" src="https://image.flaticon.com/icons/svg/145/145862.svg">
-          <img class="ui top aligned medium image" src="https://image.flaticon.com/icons/svg/163/163829.svg">
-          <img class="ui top aligned medium image" src="https://image.flaticon.com/icons/svg/145/145867.svg">
-          <img class="ui top aligned medium image" src="https://image.flaticon.com/icons/svg/163/163809.svg">
-          <img class="ui top aligned medium image" src="https://image.flaticon.com/icons/svg/163/163827.svg">
+        <div class="blue column">
+          <h1><strong>MY TEAM</strong></h1>
+          <div class="ui container">
+            <hr>
+            <div class="ui small images">
+                <img class="ui medium  circular image" src="http://www.mx7.com/i/104/mKMVth.jpg">
+                <img class="ui medium  circular image" src="http://www.mx7.com/i/12a/k2O7WU.jpg">
+                <img class="ui medium  circular image" src="http://www.mx7.com/i/124/QjvzQR.jpg">
+                <img class="ui medium  circular image" src="http://www.mx7.com/i/1ed/0P5L0i.jpg">
+                <img class="ui medium  circular image" src="http://www.mx7.com/i/1d1/6IPhj7.jpg">
+            </div>
+            </div>
         </div>
       </div>
     </div>
