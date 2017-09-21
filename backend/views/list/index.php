@@ -11,7 +11,7 @@ $baseUrl = \Yii::getAlias('@web');
       <a class="item active">
         Booking
       </a>
-      <a class="item">
+      <a href="new" class="item">
         Boat
       </a>
     </div>
