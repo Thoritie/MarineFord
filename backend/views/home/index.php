@@ -29,8 +29,8 @@
               <i class="add to cart icon"></i>จอง
             </h3></a></a>
             <div class="right item">
-              <a class="ui inverted button">Log in</a>
-              <a class="ui inverted button">Sign Up</a>
+              <a class="ui inverted button" href="auth/login">Log in</a>
+              <a class="ui inverted button" href="auth/register">Sign Up</a>
             </div>
           </div>
         </div>
