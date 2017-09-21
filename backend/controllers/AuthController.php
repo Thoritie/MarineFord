@@ -107,6 +107,7 @@ class AuthController extends Controller
       $phone = $request->get('phone',null);
       $pass = $request->get('password',null);
       $address = $request->get('address',null);
+      $bill = $request->get('bill',null);
       $customer = new Customer;
 
       $customer->cusname= $cusname;
@@ -114,6 +115,7 @@ class AuthController extends Controller
       $customer->email= $email;
       $customer->password=  md5($pass);
       $customer->address= $address;
+      $customer->bill = $bill = array();
 
       if($customer->save()){
         echo "success";

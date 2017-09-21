@@ -30,7 +30,7 @@ class Customer extends \yii\mongodb\ActiveRecord
           'idboat',
           'rentdate',
           'backtdate',
-          'destination'
+          'destination',
         ];
     }
 

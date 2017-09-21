@@ -120,29 +120,51 @@ class ReserController extends Controller
     public function actionCustomer()
     {
         $request = Yii::$app->request;
-        $bill_json = $request->post('bill',null);
-        $bills =  json_decode($bill_json);
+        $session = Yii::$app->session;
 
+        $customer_id = $session->get('user')['_id'];
 
-        $customer = new Customer();
-        $customer->cusname = Yii::$app->session->get('user')['_id'];
-        $b = array();
-        foreach ($bills as $bill) {
+        $customer = Customer::findOne($customer_id);
+        $bill = $customer['bill'] ;
+        var_dump($bill);
+        if($bill==null)
+          $bill = array();
+
           $t = array();
           $billz = Customer::findOne($bill);
           //วันที่คืน
-          $t['idboat'] = $billz['idboat'];
+          $t['idboat'] = $request->get('boat_id',null);
           //ราคาที่ซื้อตอนนั้น
-          $t['destination'] = $billz['destination'];
+          $t['destination'] = $request->get('destination',null);
           //ราคาทีี่ปลับตอนนั้น
-          $t['rentdate'] = $billz['rentdate'];
+          $t['rentdate'] = $request->get('rentdate',null);
           //สถานะ กำลังจัดส่ง
-          $t['backtdate'] = $billz['backtdate'];
+          $t['backtdate'] = $request->get('backtdate',null);
           // echo date('d/m/y h:i:s', $end_date)." ";
-          array_push($b,$t);
-        }
-        $customer->bill = $b;
-        echo $customer->save();
+          array_push($bill,$t);
+          $customer->bill = $bill;
+          $customer->save();
+
+        //
+        //
+        // $customer = new Customer();
+        // $customer->cusname = Yii::$app->session->get('user')['cusname'];
+        // $b = array();
+        // foreach ((array)$bills as $bill) {
+        //   $t = array();
+        //   $billz = Customer::findOne($bill);
+        //   //วันที่คืน
+        //   $t['idboat'] = $billz['idboat'];
+        //   //ราคาที่ซื้อตอนนั้น
+        //   $t['destination'] = $billz['destination'];
+        //   //ราคาทีี่ปลับตอนนั้น
+        //   $t['rentdate'] = $billz['rentdate'];
+        //   //สถานะ กำลังจัดส่ง
+        //   $t['backtdate'] = $billz['backtdate'];
+        //   // echo date('d/m/y h:i:s', $end_date)." ";
+        //   array_push($b,$t);
+        // }
+        // $customer->bill = $b;
     }
 
 

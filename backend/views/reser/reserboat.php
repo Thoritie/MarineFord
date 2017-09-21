@@ -27,7 +27,7 @@ $baseUrl=\Yii::getAlias('@web');
       <div class="column">
         <div class="ui segment very padded">
             <!-- form begin -->
-            <form class="ui form" action="<?=$baseUrl."/reser/save" ?>" method="get">
+            <form class="ui form" action="<?=$baseUrl."/reser/customer" ?>" method="get">
                 <h3 class="ui dividing header"><i class="tag icon"></i>Customer Information</h3>
                 <div class="field">
                     <label>Name</label>
