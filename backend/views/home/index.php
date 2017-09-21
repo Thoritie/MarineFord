@@ -103,9 +103,13 @@ $baseUrl=\Yii::getAlias('@web');
 <div class="ui container">
 <h1>REVIEW</h1>
 <hr>
-<div class="container very padded">
+
+
+
+<div class="ui vertical segment">
 <div class="ui three column grid">
   <div class="column">
+     
     <div class="ui fluid link card">
       <div class="image">
         <img src="https://lh3.googleusercontent.com/Mq6W2e2VcqvnUie7x6mW597jCy3n7eEZcFN6rT6cP1l4cbb5lO5VSmKwZDJDORcNJLM=w300">
@@ -154,9 +158,9 @@ $baseUrl=\Yii::getAlias('@web');
     </div>
   </div>
 </div>
-</div>
+
 <br>
-<div class="container very padded">
+
 <div class="ui three column grid">
   <div class="column">
     <div class="ui fluid link card">
@@ -207,7 +211,11 @@ $baseUrl=\Yii::getAlias('@web');
     </div>
   </div>
 </div>
+
+
 </div>
+
+
 </div>
 </div>
 </div>
