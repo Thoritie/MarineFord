@@ -106,4 +106,32 @@ class ListController extends Controller
 
     			]);
     }
+
+    public function actionNew()
+    {
+
+                $request = Yii::$app->request;
+             //  	$search = $request->get('search',null);
+                $session = Yii::$app->session;
+
+
+                if($session->has('user')){
+                  $user  = $session->get('user');
+                }else {
+                  $user = null;
+                }
+
+                $query = Boat::find();
+                // if($search != null){
+             //  		$query->where(["maxseat" => $search]);
+                //
+             //  	}
+              	$result = $query->all();
+
+        return $this->render('new',
+    			[
+                    'result' => $result,
+
+    			]);
+    }
 }

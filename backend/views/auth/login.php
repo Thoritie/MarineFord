@@ -2,24 +2,21 @@
 $baseUrl=\Yii::getAlias('@web');
  ?>
 
- <div class="container h-100 d-flex justify-content-center">
-       <form role="form" method="post" action="<?=$baseUrl."/auth/loginaction"?>">
-             <h2>Login</h2>
-             <hr>
-             <div class="form-group">
-               <label class="sr-only" for="email">E-Mail</label>
-               <div class="input-group">
-                 <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
-               </div>
-             </div>
-             <div class="form-group">
-               <label class="sr-only" for="password">Password</label>
-               <div class="input-group">
-                 <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
-               </div>
-             </div>
-
-             <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i> Login</button>
-             <a href="<?= $baseUrl."/auth/register"?>"><button type="button" class="btn btn-link">Register</button></a>
-       </form>
+ <div class="container h-100 d-flex justify-content-center">       
+       <form class="ui form" role="form" method="post" action="<?=$baseUrl."/auth/loginaction"?>">
+       		<div class="container" style="width:550px;padding-top:45px;">
+	       		<h2>Login</h2>
+	       		<hr>
+	  			<div class="field">
+	    			<label>E-mail</label>
+	    			<input type="email" name="email" id="email" placeholder="you@example.com" required autofocus>
+	  			</div>
+	  			<div class="field">
+	    			<label>Password</label>
+	    			<input type="password" name="password" id="password" placeholder="Password" required>
+	  			</div>
+	  			<button class="btn btn-success" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+	             <a href="<?= $baseUrl."/auth/register"?>"><button type="button" class="btn btn-link">Register</button></a>
+            </div>
+		</form>
  </div>
