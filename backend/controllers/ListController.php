@@ -32,9 +32,17 @@ class ListController extends Controller
     public function actionIndex()
     {
         // $this->layout = "@backend/themes/adminlte/layouts/index";
-        
+
         $request = Yii::$app->request;
       	$search = $request->get('search',null);
+        $session = Yii::$app->session;
+
+
+        if($session->has('user')){
+          $user  = $session->get('user');
+        }else {
+          $user = null;
+        }
 
         $query = Boat::find();
         if($search != null){
@@ -58,35 +66,36 @@ class ListController extends Controller
           'input' => $search,
           'result' => $boats,
           'pagination' => $pagination,
+          'user' => $user,
         ]);
     }
     public function actionTesthistory(){
-    	
+
     	$request = Yii::$app->request;
     	$search = $request->get('search',null);
-    	
+
     	$query = Customer::find();
     	if($search != null){
     		$query->where(["cusname" => $search]);
     	}
     	$result = $query->all();
-    	
+
     	$pagination = new Pagination([
     			'defaultPageSize' => 6,
     			'totalCount' => $query->count(),
     	]);
-    	
+
     	$cus = $query->orderBy('idcustomer')
 	    	->offset($pagination->offset)
 	    	->limit($pagination->limit)
 	    	->all();
-    	
+
        	return $this->render('testhistory',
     			[
     				'input' => $search,
     				'result' => $cus,
     				//'pagination' => $pagination,
-    					
+
     			]);
     }
 }

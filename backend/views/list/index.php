@@ -55,9 +55,12 @@ $baseUrl = \Yii::getAlias('@web');
 						  Maxseat <?=$var['maxseat']?>
 						</span>
 						<span class="right floated">
+            <?php if (isset($user)): ?>
 						  <a class="btn btn-primary" href="<?=$baseUrl."/reser/reserboat?id=".$var['_id']?>" role="button" style="margin-right:5px">Book Now</a>
-
-						</span>
+            <?php else: ?>
+              <a class="btn btn-primary" href="<?=$baseUrl."/auth/login"?>" role="button" style="margin-right:5px">Book Now</a>
+            <?php endif; ?>
+            </span>
 					  </div>
 					  <!-- <div class="extra content">
 						<span class="right floated">
