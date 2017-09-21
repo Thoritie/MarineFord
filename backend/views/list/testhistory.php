@@ -35,7 +35,7 @@ $this->title = 'List Reservation';
       					<a class="header">Bill</a>
       					<div class="meta">
       						<?php $bill = $var->bill?>
-      						<?php foreach ($bill as $var){ ?>
+      						<?php foreach ((array)$bill as $var){ ?>
         						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
         						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>	
 							<?php }?>
