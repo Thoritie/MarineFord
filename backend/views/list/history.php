@@ -28,8 +28,8 @@ $this->title = 'List Reservation';
  		<div class="column">
  			<div class="ui items">
   				<div class="item">
-	    			<div class="image">
-	     				<img src="https://www.w3schools.com/w3css/img_avatar3.png">
+	    			<div style="width:200px;">
+	     				<img class="ui small circular image" src="https://www.w3schools.com/w3css/img_avatar3.png">
 	    			</div>
     				<div class="content">
       					<a class="header">Bill</a>
@@ -41,9 +41,8 @@ $this->title = 'List Reservation';
 						  	<?php }?>
       					</div>
       					<div class="extra content">
-      						<div class="ui two buttons">
-       							<div class="ui basic green button" href="">Edit</div>
-       							<div class="ui basic red button" href="">Delete</div>
+      						<div class="ui buttons">
+       							<div class="ui basic red button" href="">ยกเลิกการจอง</div>
       						</div>
     					</div>
     				</div>
