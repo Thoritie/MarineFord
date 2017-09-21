@@ -12,7 +12,7 @@ $baseUrl=\Yii::getAlias('@web');
 
 
             <!-- img -->
-            <img src="http://wallpapers.wallpapersdepo.net/free-wallpapers/3123/Great-Voyage.jpg" alt="..." class="img-thumbnail">
+            <img src="<?=$model['pic']?>" alt="..." class="img-thumbnail">
 
             <h2 class="ui horizontal inverted divider">
                 <?=$model ['name'] ?>
