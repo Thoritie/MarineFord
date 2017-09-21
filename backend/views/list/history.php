@@ -24,7 +24,9 @@ $this->title = 'List Reservation';
 </div>
 
 <div class="ui two column grid">
-	<?php foreach ($result as $var){ ?>
+
+	<?php foreach ($result['bill'] as $var){ ?>
+
  		<div class="column">
  			<div class="ui items">
   				<div class="item">
@@ -34,11 +36,9 @@ $this->title = 'List Reservation';
     				<div class="content">
       					<a class="header">Bill</a>
       					<div class="meta">
-      					<?php $bill = $var->bill?>
-      					<?php foreach ((array)$bill as $var){ ?>
-      						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
+      						<div class="description">Boat ID : <a><?=$var['idboat']?></a></div><br>
+                  <div class="description">Destination : <a><?=$var['destination']?></a></div><br>
       						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
-						  	<?php }?>
       					</div>
       					<div class="extra content">
       						<div class="ui buttons">

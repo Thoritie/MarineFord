@@ -121,12 +121,13 @@ class ReserController extends Controller
     {
         $request = Yii::$app->request;
         $session = Yii::$app->session;
+        $baseUrl = \Yii::getAlias('@web');
 
         $customer_id = $session->get('user')['_id'];
 
         $customer = Customer::findOne($customer_id);
         $bill = $customer['bill'] ;
-        var_dump($bill);
+
         if($bill==null)
           $bill = array();
 
@@ -144,6 +145,8 @@ class ReserController extends Controller
           array_push($bill,$t);
           $customer->bill = $bill;
           $customer->save();
+
+          return $this->redirect($baseUrl."/list/history");
 
         //
         //

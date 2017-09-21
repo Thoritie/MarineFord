@@ -81,26 +81,14 @@ class ListController extends Controller
         $user = null;
       }
 
-    	$query = Customer::find();
-    	if($search != null){
-    		$query->where(["cusname" => $search]);
-    	}
-    	$result = $query->all();
+    	$customer = Customer::findOne($user['_id']);
 
-    	$pagination = new Pagination([
-    			'defaultPageSize' => 6,
-    			'totalCount' => $query->count(),
-    	]);
 
-    	$cus = $query->orderBy('idcustomer')
-	    	->offset($pagination->offset)
-	    	->limit($pagination->limit)
-	    	->all();
 
        	return $this->render('history',
     			[
     				'input' => $search,
-    				'result' => $cus,
+    				'result' => $customer,
             'user' => $user
     				//'pagination' => $pagination,
 
