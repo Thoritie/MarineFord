@@ -11,7 +11,7 @@ $baseUrl = \Yii::getAlias('@web');
       <a class="item active">
         Booking
       </a>
-      <a class="item">
+      <a href="new" class="item">
         Boat
       </a>
     </div>
@@ -38,8 +38,8 @@ $baseUrl = \Yii::getAlias('@web');
 				<?php foreach ($result as $var){ ?>
 				  <div class="column">
 				    <div class="ui fluid link card">
-				      <div class="image">
-				        <img src="https://www.w3schools.com/w3css/img_avatar3.png">
+				      <div class="image" style ="height: 250px;">
+				        <img src="<?=$var['pic']?> ">
 				      </div>
 
 					  <div class="content">

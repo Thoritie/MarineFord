@@ -53,6 +53,7 @@ class ReserController extends Controller
         $user = null;
       }
 
+
     	$model = Boat::findOne($id);
     	return $this->render('Reserboat', [
     			 'model' => $model,
@@ -62,26 +63,21 @@ class ReserController extends Controller
 
     public function actionSave(){
         $request = Yii::$app->request;
-        // $num = Customer::maximum(
-        // [
-        //     "column" => "idcustomer",
-        // ]
-        // );
-        // $numbill = Customer::maximum(
-        // [
-        //     "column" => "bill.idbill",
-        // ]
-        // );
+        $session = Yii::$app->session;
 
-        // $boats = Boat::findOne($id);
+        if($session->has('user')){
+          $user  = $session->get('user');
+        }else {
+          $user = null;
+        }
 
     	$id = $request->get('id',null);
     	$cusname = $request->get('cusname',null);
       $idcard = $request->get('idcard',null);
-        $rentdate = $request->get('rentdate',null);
-        $backdate = $request->get('backdate',null);
-        $destination = $request->get('destination',null);
-        $boatid = $request->get('boat_id',null);
+      $rentdate = $request->get('rentdate',null);
+      $backdate = $request->get('backdate',null);
+      $destination = $request->get('destination',null);
+      $boatid = $request->get('boat_id',null);
 
     	$baseUrl = \Yii::getAlias('@web');
 
@@ -97,7 +93,6 @@ class ReserController extends Controller
 
     	// $modelCus->idcustomer = $num+1;
         $modelCus->cusname = $cusname;
-        $modelCus->idcard = $idcard;
         $modelCus->bill =[
                 'idboat' => $boatid,
                 'rentdate' => $rentdate,
@@ -122,13 +117,33 @@ class ReserController extends Controller
 
     }
 
-    // $request = Yii::$app->request;
-    //     	$id = $request->get('id',null);
-    //
-    //     	$model = Course::findOne($id);
-    //     	return $this->render('edit',[
-    //     		'model' => $model
-    //     	]);
+    public function actionCustomer()
+    {
+        $request = Yii::$app->request;
+        $bill_json = $request->post('bill',null);
+        $bills =  json_decode($bill_json);
+
+
+        $customer = new Customer();
+        $customer->cusname = Yii::$app->session->get('user')['_id'];
+        $b = array();
+        foreach ($bills as $bill) {
+          $t = array();
+          $billz = Customer::findOne($bill);
+          //วันที่คืน
+          $t['idboat'] = $billz['idboat'];
+          //ราคาที่ซื้อตอนนั้น
+          $t['destination'] = $billz['destination'];
+          //ราคาทีี่ปลับตอนนั้น
+          $t['rentdate'] = $billz['rentdate'];
+          //สถานะ กำลังจัดส่ง
+          $t['backtdate'] = $billz['backtdate'];
+          // echo date('d/m/y h:i:s', $end_date)." ";
+          array_push($b,$t);
+        }
+        $customer->bill = $b;
+        echo $customer->save();
+    }
 
 
 

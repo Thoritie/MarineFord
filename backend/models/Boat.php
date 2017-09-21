@@ -25,6 +25,7 @@ class Boat extends \yii\mongodb\ActiveRecord
           'name',
           'type',
         	'maxseat',
+        		'pic',
         ];
     }
 
@@ -34,7 +35,7 @@ class Boat extends \yii\mongodb\ActiveRecord
     public function rules()
     {
         return [
-            [['_id','boat_id', 'name', 'type', 'maxseat'], 'safe']
+            [['_id','boat_id', 'name', 'type', 'maxseat','pic'], 'safe']
         ];
     }
 

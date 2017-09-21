@@ -89,6 +89,6 @@ $baseUrl=\Yii::getAlias('@web');
         </div>
     </div>
 
-  <input type="submit" class="ui secondary button"value="Reservations">
+  <input type="submit" class="ui secondary button" value="Reservations">
   <input type="hidden" name="boat_id" value="<?=$model['boat_id'] ?>">
 </form>

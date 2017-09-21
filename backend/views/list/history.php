@@ -10,20 +10,20 @@ $this->title = 'List Reservation';
 			  <div class="col-md-6"><h1>List Reservation history</h1></div>
 			  <div class="col-md-6">
 			  	<form class="input-group" action="" method="get">
-			  	<input type="text" name="search" value="<?php echo $input?>" 
+			  	<input type="text" name="search" value="<?php echo $input?>"
    	 			placeholder="Search.." class="form-control pull-right" style="width:200px;">
-    	 			<div class="input-group-btn"> 
-    	 				<button class="btn btn-primary btn-sm" type="submit"> 
-    	 					<i class="glyphicon glyphicon-search"></i> 
-   	 				</button> 
-    	 			</div> 
-    	 		</form> 
+    	 			<div class="input-group-btn">
+    	 				<button class="btn btn-primary btn-sm" type="submit">
+    	 					<i class="glyphicon glyphicon-search"></i>
+   	 				</button>
+    	 			</div>
+    	 		</form>
 			  </div>
 			</div>
    	 	</div>
 </div>
- 
-<div class="ui two column grid"> 
+
+<div class="ui two column grid">
 	<?php foreach ($result as $var){ ?>
  		<div class="column">
  			<div class="ui items">
@@ -34,11 +34,11 @@ $this->title = 'List Reservation';
     				<div class="content">
       					<a class="header">Bill</a>
       					<div class="meta">
-      						<?php $bill = $var->bill?>
-      						<?php foreach ((array)$bill as $var){ ?>
-        						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
-        						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>	
-							<?php }?>
+      					<?php $bill = $var->bill?>
+      					<?php foreach ((array)$bill as $var){ ?>
+      						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
+      						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
+						  	<?php }?>
       					</div>
       					<div class="extra content">
       						<div class="ui two buttons">

@@ -44,7 +44,7 @@ class ListController extends Controller
           $user = null;
         }
 
-        $query = Boat::find();
+        $query = Boat::find($user);
         if($search != null){
       		$query->where(["maxseat" => $search]);
 
@@ -69,10 +69,17 @@ class ListController extends Controller
           'user' => $user,
         ]);
     }
-    public function actionTesthistory(){
+    public function actionHistory(){
 
     	$request = Yii::$app->request;
     	$search = $request->get('search',null);
+      $session = Yii::$app->session;
+
+      if($session->has('user')){
+        $user  = $session->get('user');
+      }else {
+        $user = null;
+      }
 
     	$query = Customer::find();
     	if($search != null){
@@ -90,11 +97,40 @@ class ListController extends Controller
 	    	->limit($pagination->limit)
 	    	->all();
 
-       	return $this->render('testhistory',
+       	return $this->render('history',
     			[
     				'input' => $search,
     				'result' => $cus,
+            'user' => $user
     				//'pagination' => $pagination,
+
+    			]);
+    }
+
+    public function actionNew()
+    {
+
+                $request = Yii::$app->request;
+             //  	$search = $request->get('search',null);
+                $session = Yii::$app->session;
+
+
+                if($session->has('user')){
+                  $user  = $session->get('user');
+                }else {
+                  $user = null;
+                }
+
+                $query = Boat::find();
+                // if($search != null){
+             //  		$query->where(["maxseat" => $search]);
+                //
+             //  	}
+              	$result = $query->all();
+
+        return $this->render('new',
+    			[
+                    'result' => $result,
 
     			]);
     }
