@@ -20,8 +20,8 @@ $baseUrl=\Yii::getAlias('@web');
 	    		<label>Name</label>
 	      			<div class="field" style="width:450px;">
 	        			<input type="text" name="cusname" placeholder="First Name - Last Name">
-	     			</div>	
-	  		</div>	
+	     			</div>
+	  		</div>
 	      	<div class="field" style="width:450px;">
 	      		<label>Email</label>
 	        	<input type="email" name="email" placeholder="Frist.Name@example.com">
@@ -29,7 +29,7 @@ $baseUrl=\Yii::getAlias('@web');
 	      	<div class="field" style="width:450px;">
 	      		<label>Phone</label>
 	        	<input type="text" name="phone" placeholder="088-888-888-8">
-	      	</div>	
+	      	</div>
 	      	<div class="field" style="width:450px;">
 	      		<label>Password</label>
 	        	<input type="password" name="password" placeholder="6-8 Charecter">
@@ -37,7 +37,7 @@ $baseUrl=\Yii::getAlias('@web');
 	      	<div class="field" style="width:450px;">
 	      		<label>Address</label>
 	        	<textarea class="form-control" name="address" placeholder="กรอกข้อมูลที่อยู่โดยละเอียดน่ะค่ะ" rows="3"></textarea>
-	      	</div>	
+	      	</div>
 	  		<div class="btn btn-primary" tabindex="0">Submit</div>
 	  		</div>
 		</form>

@@ -55,7 +55,7 @@ class AuthController extends Controller
     public function actionLogin()
     {
       $request = Yii::$app->request;
-      $baseUrl = Yii::getAlias('@web');
+      $baseUrl = \Yii::getAlias('@web');
       $session = Yii::$app->session;
 
       if($session->has('user'))
@@ -103,7 +103,6 @@ class AuthController extends Controller
 
       //get id edit , not id -> new
       $cusname = $request->get('cusname',null);
-      $cussirname = $request->get('cussirname',null);
       $email = $request->get('email',null);
       $phone = $request->get('phone',null);
       $pass = $request->get('password',null);
@@ -111,7 +110,6 @@ class AuthController extends Controller
       $customer = new Customer;
 
       $customer->cusname= $cusname;
-      $customer->cussirname= $cussirname;
       $customer->phone= $phone;
       $customer->email= $email;
       $customer->password=  md5($pass);
