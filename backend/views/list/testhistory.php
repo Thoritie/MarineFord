@@ -28,21 +28,22 @@ $this->title = 'List Reservation';
  		<div class="column">
  			<div class="ui items">
   				<div class="item">
-	    			<div style="width:200px;">
-	     				<img class="ui small circular image" src="https://www.w3schools.com/w3css/img_avatar3.png">
+	    			<div class="image">
+	     				<img src="https://www.w3schools.com/w3css/img_avatar3.png">
 	    			</div>
     				<div class="content">
       					<a class="header">Bill</a>
       					<div class="meta">
-      					<?php $bill = $var->bill?>
-      					<?php foreach ((array)$bill as $var){ ?>
-      						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
-      						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
-						  	<?php }?>
+      						<?php $bill = $var->bill?>
+      						<?php foreach ((array)$bill as $var){ ?>
+        						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
+        						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
+							<?php }?>
       					</div>
       					<div class="extra content">
-      						<div class="ui buttons">
-       							<div class="ui basic red button" href="">ยกเลิกการจอง</div>
+      						<div class="ui two buttons">
+       							<div class="ui basic green button" href="">Edit</div>
+       							<div class="ui basic red button" href="">Delete</div>
       						</div>
     					</div>
     				</div>
