@@ -298,13 +298,30 @@ $baseUrl=\Yii::getAlias('@web');
           <div class="ui container">
             <hr>
             <div class="ui small images">
-                <img class="ui medium  circular image" src="http://www.mx7.com/i/104/mKMVth.jpg">
-                <img class="ui medium  circular image" src="http://www.mx7.com/i/12a/k2O7WU.jpg">
-                <img class="ui medium  circular image" src="http://www.mx7.com/i/124/QjvzQR.jpg">
-                <img class="ui medium  circular image" src="http://www.mx7.com/i/1ed/0P5L0i.jpg">
-                <img class="ui medium  circular image" src="http://www.mx7.com/i/1d1/6IPhj7.jpg">
+            	<div class="col-md-1"></div>
+            	<div class="col-md-2">
+            		<img class="ui medium  circular image" src="http://www.mx7.com/i/104/mKMVth.jpg">
+            		<h1>Thor</h1>
+            	</div>
+            	<div class="col-md-2">
+            		<img class="ui medium  circular image" src="http://www.mx7.com/i/12a/k2O7WU.jpg">
+            		<h1>Tan</h1>
+            	</div>             
+                <div class="col-md-2">
+                	<img class="ui medium  circular image" src="http://www.mx7.com/i/124/QjvzQR.jpg">
+                	<h1>Fern</h1>
+                </div>
+                <div class="col-md-2">
+                	<img class="ui medium  circular image" src="http://www.mx7.com/i/1ed/0P5L0i.jpg">
+                	<h1>Dome</h1>
+                </div>
+                <div class="col-md-2">
+                	<img class="ui medium  circular image" src="http://www.mx7.com/i/1d1/6IPhj7.jpg">
+                	<h1>Kok</h1>
+                </div> 
+                <div class="col-md-1"></div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
