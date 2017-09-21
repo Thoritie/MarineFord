@@ -1,6 +1,5 @@
 <?php
 $baseUrl=\Yii::getAlias('@web');
-use yii\widgets\LinkPager;
  ?>
 
  <div class="container h-100 d-flex justify-content-center">

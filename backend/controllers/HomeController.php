@@ -33,7 +33,17 @@ class HomeController extends Controller
 
         // $this->layout = "@backend/themes/adminlte/layouts/index";
         $this->layout = "@backend/themes/new/index";
-        return $this->render('index');
+        $session = Yii::$app->session;
+
+        if($session->has('user')){
+          $user  = $session->get('user');
+        }else {
+          $user = null;
+        }
+
+      	return $this->render('index', [
+            'user' => $user,
+      	]);
 
 
     }

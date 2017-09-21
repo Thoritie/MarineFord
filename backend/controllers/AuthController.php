@@ -55,7 +55,7 @@ class AuthController extends Controller
     public function actionLogin()
     {
       $request = Yii::$app->request;
-      $baseUrl = \Yii::getAlias('@web');
+      $baseUrl = Yii::getAlias('@web');
       $session = Yii::$app->session;
 
       if($session->has('user'))
@@ -123,7 +123,7 @@ class AuthController extends Controller
         echo "error";
       }
        return $this->redirect($baseUrl."/auth/login");
-      }
+    }
 
       public function actionLoginsave()
       {
