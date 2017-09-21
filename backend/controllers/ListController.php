@@ -60,4 +60,7 @@ class ListController extends Controller
           'pagination' => $pagination,
         ]);
     }
+    public function actionTesthistory(){
+    	
+    }
 }
