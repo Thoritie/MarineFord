@@ -23,21 +23,32 @@ $this->title = 'List Reservation';
    	 	</div>
 </div>
  
-	
-<div class="ui one column grid">
-	<?php foreach ($result as $var){ ?> 
-		  <div class="column">
-		    <div class="ui fluid card">
-		      <div class="image">
-		        <img src="">
-		      </div>
-		      <div class="content">
-		        <div class="header">Customer ID :</div>
-		        <div class="description">Name : <a><?=$var['cusname']?></a></div>
-		        <div class="description">Last Name : <a><?=$var['cussirname']?></a></div>
-		      </div>
-		    </div>
-		  </div>
-	<?php }?>
+<div class="ui two column grid"> 
+	<?php foreach ($result as $var){ ?>
+ 		<div class="column">
+ 			<div class="ui items">
+  				<div class="item">
+	    			<div class="image">
+	     				<img src="https://www.w3schools.com/w3css/img_avatar3.png">
+	    			</div>
+    				<div class="content">
+      					<a class="header">Bill</a>
+      					<div class="meta">
+      						<?php $bill = $var->bill?>
+      						<?php foreach ($bill as $var){ ?>
+        						<div class="description">Boat ID : <p><?=$var['idboat']?></p></div>
+        						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>	
+							<?php }?>
+      					</div>
+      					<div class="extra content">
+      						<div class="ui two buttons">
+       							<div class="ui basic green button" href="">Edit</div>
+       							<div class="ui basic red button" href="">Delete</div>
+      						</div>
+    					</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	<?php } ?>
 </div>
-	

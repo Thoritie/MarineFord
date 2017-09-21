@@ -10,48 +10,37 @@ $baseUrl=\Yii::getAlias('@web');
    <title>Register</title>
  </head>
 
- <body>
-   <form action="<?=$baseUrl."/auth/registersave"?>">
-     <div class="form-group">
-       <label for="inputEmail3" class="col-sm-2 control-label">FirstName :</label>
-       <div class="col-sm-6">
-         <input type="text" class="form-control" name="cusname" placeholder="FirstName">
-       </div>
-     </div>
-     <div class="form-group">
-       <label for="inputPassword3" class="col-sm-2 control-label">LastName :</label>
-       <div class="col-sm-6">
-         <input type="text" class="form-control" name="cussirname" placeholder="LastName">
-       </div>
-     </div>
-     <div class="form-group">
-       <label for="inputPassword3" class="col-sm-2 control-label">Phone :</label>
-       <div class="col-sm-6">
-         <input type="text" class="form-control" name="phone" placeholder="088-888-888-8">
-       </div>
-     </div>
-     <div class="form-group">
-       <label for="inputPassword3" class="col-sm-2 control-label">Email :</label>
-       <div class="col-sm-6">
-         <input type="email" class="form-control" name="email" placeholder="Frist.Name@example.com">
-       </div>
-     </div>
-     <div class="form-group">
-       <label for="inputPassword3" class="col-sm-2 control-label">Password :</label>
-       <div class="col-sm-6">
-         <input type="password" class="form-control" name="password" placeholder="6-8 Charecter">
-       </div>
-     </div>
-     <div class="form-group">
-       <label for="inputPassword3" class="col-sm-2 control-label">Address :</label>
-       <div class="col-sm-6">
-         <textarea class="form-control" name="address" placeholder="กรอกข้อมูลที่อยู่โดยละเอียดน่ะค่ะ" rows="3"></textarea>
-       </div>
-     </div>
-     <div class="col-md-12 col-md-offset-4">
-       <button type="submit" class="btn btn-primary" name="submit">ยืนยัน</button>
-     </div>
-   </form>
- </body>
-
- </html>
+<body>
+	<div class="container" style="width:850px;padding-top:15px;">
+		<form class="ui form" action="<?=$baseUrl."/auth/registersave"?>">
+	  		<h2>Create Account</h2>
+	  		<hr>
+	  		<div class="container" style="width:550px;">
+	  		<div class="field">
+	    		<label>Name</label>
+	      			<div class="field" style="width:450px;">
+	        			<input type="text" name="cusname" placeholder="First Name - Last Name">
+	     			</div>	
+	  		</div>	
+	      	<div class="field" style="width:450px;">
+	      		<label>Email</label>
+	        	<input type="email" name="email" placeholder="Frist.Name@example.com">
+	      	</div>
+	      	<div class="field" style="width:450px;">
+	      		<label>Phone</label>
+	        	<input type="text" name="phone" placeholder="088-888-888-8">
+	      	</div>	
+	      	<div class="field" style="width:450px;">
+	      		<label>Password</label>
+	        	<input type="password" name="password" placeholder="6-8 Charecter">
+	      	</div>
+	      	<div class="field" style="width:450px;">
+	      		<label>Address</label>
+	        	<textarea class="form-control" name="address" placeholder="กรอกข้อมูลที่อยู่โดยละเอียดน่ะค่ะ" rows="3"></textarea>
+	      	</div>	
+	  		<div class="btn btn-primary" tabindex="0">Submit</div>
+	  		</div>
+		</form>
+	</div>
+</body>
+</html>
