@@ -31,9 +31,9 @@ $baseUrl=\Yii::getAlias('@web');
               <i class="list icon"></i>list
             </h3></a>
             <?php if (isset($user)): ?>
-            <a class="item" href="reser/index">
+            <a class="item" href="<?=$baseUrl."/list/history"?>">
               <h3>
-              <i class="add to cart icon"></i>จอง
+              <i class="add to cart icon"></i>ประวัติการจอง
             </h3></a>
             <?php endif; ?>
             <div class="right item">

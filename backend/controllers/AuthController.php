@@ -87,7 +87,7 @@ class AuthController extends Controller
       {
         $session->set('user', $customer);
         $session->setFlash('success', " ยินดีต้อนรับเข้าสู่ระบบ");
-        return $this->redirect($baseUrl."/");
+        return $this->redirect($baseUrl."/list/history");
       }
       else {
         $session->setFlash('danger', " ชื่อใช้หรือรหัสผ่านไม่ถูก กรุณาเข้าสู่ระบบใหม่อีกครั้ง");
