@@ -29,7 +29,10 @@ $baseUrl = \Yii::getAlias('@web');
                            <th data-field="name" data-sortable="true">Boat name</th>
                            <th data-field="salary" data-sortable="true">Type</th>
                            <th data-field="country" data-sortable="true">Maxseat</th>
+                           <th data-field="price" data-sortable="true"><i class="home icon"></i>Price</th>
+                           <th></th>
                            <th data-field="actions"  data-events="operateEvents" ></th>
+
 
                          </thead>
                          <tbody >
@@ -39,10 +42,11 @@ $baseUrl = \Yii::getAlias('@web');
                                <td><?php echo $data->boat_id ?></td>
                                <td><b><?php echo $data->name ?></b></td>
                                <td><?php echo $data->type ?></td>
-                               <td><?php echo $data->maxseat ?></td>
-                               <td>
-                                
-                               </td>
+                               <td class="text-center"><?php echo $data->maxseat?></td>
+                               <td class="text-center"><?php echo $data->price?></td>
+                               <td></td>
+                               <td></td>
+
                              </tr>
                              <?php endforeach; ?>
                          </tbody>
