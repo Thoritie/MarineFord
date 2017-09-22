@@ -112,7 +112,7 @@ $baseUrl=\Yii::getAlias('@web');
 
     <div class="ui fluid link card">
       <div class="image">
-        <img src="https://lh3.googleusercontent.com/Mq6W2e2VcqvnUie7x6mW597jCy3n7eEZcFN6rT6cP1l4cbb5lO5VSmKwZDJDORcNJLM=w300">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-1046877389207ce9.jpg">
       </div>
       <div class="content">
         <center>
@@ -128,7 +128,7 @@ $baseUrl=\Yii::getAlias('@web');
   <div class="column">
     <div class="ui fluid link card">
       <div class="image">
-        <img src="http://img.freepik.com/vettori-gratuito/sfondo-carino-barca_23-2147552049.jpg?size=338&ext=jpg">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-104687421627daf3.jpg">
       </div>
       <div class="content">
         <center>
@@ -144,7 +144,7 @@ $baseUrl=\Yii::getAlias('@web');
   <div class="column">
     <div class="ui fluid link card">
       <div class="image">
-        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-104687ef1d6e6882.jpg">
       </div>
       <div class="content">
         <center>
@@ -165,7 +165,7 @@ $baseUrl=\Yii::getAlias('@web');
   <div class="column">
     <div class="ui fluid link card">
       <div class="image">
-        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-1046875bc3dca099.jpg">
       </div>
       <div class="content">
         <center>
@@ -181,7 +181,7 @@ $baseUrl=\Yii::getAlias('@web');
   <div class="column">
     <div class="ui fluid link card">
       <div class="image">
-        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-10468771ead94846.jpg">
       </div>
       <div class="content">
         <center>
@@ -197,7 +197,7 @@ $baseUrl=\Yii::getAlias('@web');
   <div class="column">
     <div class="ui fluid link card">
       <div class="image">
-        <img src="https://image.freepik.com/free-vector/flat-nautical-background-with-anchors-and-lighthouse_23-2147586440.jpg">
+        <img src="https://img.happycharter.com/image-charter-boat/50m-2-mast-sailing-ship-huge-10468716b9321a36.jpg">
       </div>
       <div class="content">
         <center>
@@ -306,7 +306,7 @@ $baseUrl=\Yii::getAlias('@web');
             	<div class="col-md-2">
             		<img class="ui medium  circular image" src="http://www.mx7.com/i/12a/k2O7WU.jpg">
             		<h1>Tan</h1>
-            	</div>             
+            	</div>
                 <div class="col-md-2">
                 	<img class="ui medium  circular image" src="http://www.mx7.com/i/124/QjvzQR.jpg">
                 	<h1>Fern</h1>
@@ -318,7 +318,7 @@ $baseUrl=\Yii::getAlias('@web');
                 <div class="col-md-2">
                 	<img class="ui medium  circular image" src="http://www.mx7.com/i/1d1/6IPhj7.jpg">
                 	<h1>Kok</h1>
-                </div> 
+                </div>
                 <div class="col-md-1"></div>
             </div>
           </div>

@@ -39,7 +39,7 @@ $baseUrl = \Yii::getAlias('@web');
 				  <div class="column">
 				    <div class="ui fluid link card">
 				      <div class="image" style ="height: 250px;">
-				        <img src="<?=$var['pic']?> ">
+				        <img src="<?=$var['pic']?> " style ="height: 250px;">
 				      </div>
 
 					  <div class="content">
