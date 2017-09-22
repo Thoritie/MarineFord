@@ -1,10 +1,10 @@
 <?php
 use yii\widgets\LinkPager;
 $this->title = 'List Reservation';
-//$baseUrl = \Yii::getAlias('@web');
+$baseUrl = \Yii::getAlias('@web');
 ?>
 
-<div class="panel">
+  <div class="panel">
    	 	<div class="panel-heading">
    	 		<div class="row">
 			  <div class="col-md-6"><h1>List Reservation history</h1></div>
@@ -21,12 +21,11 @@ $this->title = 'List Reservation';
 			  </div>
 			</div>
    	 	</div>
-</div>
+  </div>
 
 <div class="ui two column grid">
-
+<?php if (is_array($result) || is_object($result)){ ?>
 	<?php foreach ($result['bill'] as $var){ ?>
-
  		<div class="column">
  			<div class="ui items">
   				<div class="item">
@@ -40,14 +39,11 @@ $this->title = 'List Reservation';
                   <div class="description">Destination : <a><?=$var['destination']?></a></div><br>
       						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
       					</div>
-      					<div class="extra content">
-      						<div class="ui buttons">
-       							<div class="ui basic red button" href="">ยกเลิกการจอง</div>
-      						</div>
-    					</div>
+      						<a href="<?=$baseUrl."/list/delete?id=".$var['idbill'] ?>" class="trash"><span class="btn btn-danger">ยกเลิกการจอง</span></a>
     				</div>
   				</div>
 			</div>
 		</div>
 	<?php } ?>
+  <?php } ?>
 </div>

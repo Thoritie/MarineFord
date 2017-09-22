@@ -83,8 +83,6 @@ class ListController extends Controller
 
     	$customer = Customer::findOne($user['_id']);
 
-
-
        	return $this->render('history',
     			[
     				'input' => $search,
@@ -118,5 +116,27 @@ class ListController extends Controller
                      'result' => $result,
 
      			]);
+    }
+
+    public function actionDelete(){
+    	$request =Yii::$app->request;
+    	$session = Yii::$app->session;
+      $baseUrl=\Yii::getAlias('@web');
+    	$id = $request->get('id',null);
+
+    	$model = Customer::findOne($id);
+    	$model->delete();
+
+    	if($model->delete()){
+    		$session->setFlash('danger', " ลบผิดพลาด");
+    		return $this->redirect($baseUrl."/list/history");
+
+    	}
+    	else {
+    		//echo "success";
+    		$session->setFlash('success', "ลบสำเร็จ");
+    		return $this->redirect($baseUrl."/list/history");
+    	}
+
     }
 }

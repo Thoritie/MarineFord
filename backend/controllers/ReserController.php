@@ -105,7 +105,6 @@ class ReserController extends Controller
         // $modelCus->bill->['backtdate']= $backdate;
         // $modelCus->bill->['distance']= $distance;
 
-
     	if($modelCus->save()){
     		echo "success";
 
@@ -133,41 +132,21 @@ class ReserController extends Controller
 
           $t = array();
           $billz = Customer::findOne($bill);
-          //วันที่คืน
+
+          $t['idbill'] = $request->get('idbill',null);
           $t['idboat'] = $request->get('boat_id',null);
-          //ราคาที่ซื้อตอนนั้น
           $t['destination'] = $request->get('destination',null);
-          //ราคาทีี่ปลับตอนนั้น
           $t['rentdate'] = $request->get('rentdate',null);
-          //สถานะ กำลังจัดส่ง
           $t['backtdate'] = $request->get('backtdate',null);
-          // echo date('d/m/y h:i:s', $end_date)." ";
+
           array_push($bill,$t);
           $customer->bill = $bill;
+          $id = $customer->getPrimaryKey();
           $customer->save();
 
           return $this->redirect($baseUrl."/list/history");
 
-        //
-        //
-        // $customer = new Customer();
-        // $customer->cusname = Yii::$app->session->get('user')['cusname'];
-        // $b = array();
-        // foreach ((array)$bills as $bill) {
-        //   $t = array();
-        //   $billz = Customer::findOne($bill);
-        //   //วันที่คืน
-        //   $t['idboat'] = $billz['idboat'];
-        //   //ราคาที่ซื้อตอนนั้น
-        //   $t['destination'] = $billz['destination'];
-        //   //ราคาทีี่ปลับตอนนั้น
-        //   $t['rentdate'] = $billz['rentdate'];
-        //   //สถานะ กำลังจัดส่ง
-        //   $t['backtdate'] = $billz['backtdate'];
-        //   // echo date('d/m/y h:i:s', $end_date)." ";
-        //   array_push($b,$t);
-        // }
-        // $customer->bill = $b;
+
     }
 
 
