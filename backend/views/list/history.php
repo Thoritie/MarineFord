@@ -22,7 +22,6 @@ $baseUrl = \Yii::getAlias('@web');
 			</div>
    	 	</div>
   </div>
-
 <div class="ui two column grid">
 <?php if (is_array($result) || is_object($result)){ ?>
 	<?php foreach ($result['bill'] as $var){ ?>
@@ -33,13 +32,15 @@ $baseUrl = \Yii::getAlias('@web');
 	     				<img class="ui small circular image" src="https://www.w3schools.com/w3css/img_avatar3.png">
 	    			</div>
     				<div class="content">
-      					<a class="header">Bill</a>
+      					<a class="header">Bill : <?=$var['idbill']?></a>
       					<div class="meta">
       						<div class="description">Boat ID : <a><?=$var['idboat']?></a></div><br>
                   <div class="description">Destination : <a><?=$var['destination']?></a></div><br>
-      						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div>
+      						<div class="description">Rentdate : <a><?=$var['rentdate']?></a></div><br>
+                  <div class="description">Backdate : <a><?=$var['backtdate']?></a></div><br>
+                  <div class="description">Status : <a><?=$var['status']?></a></div>
       					</div>
-      						<a href="<?=$baseUrl."/list/delete?id=".$var['idbill'] ?>" class="trash"><span class="btn btn-danger">ยกเลิกการจอง</span></a>
+      						<a href="<?=$baseUrl."/list/status?id=".$var['idbill']?>" class="trash"><span class="btn btn-danger">ยกเลิกการจอง</span></a>
     				</div>
   				</div>
 			</div>

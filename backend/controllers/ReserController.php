@@ -138,6 +138,7 @@ class ReserController extends Controller
           $t['destination'] = $request->get('destination',null);
           $t['rentdate'] = $request->get('rentdate',null);
           $t['backtdate'] = $request->get('backtdate',null);
+          $t['status'] = $request->get('status',null);
 
           array_push($bill,$t);
           $customer->bill = $bill;

@@ -118,25 +118,34 @@ class ListController extends Controller
      			]);
     }
 
-    public function actionDelete(){
+    public function actionStatus(){
     	$request =Yii::$app->request;
     	$session = Yii::$app->session;
       $baseUrl=\Yii::getAlias('@web');
-    	$id = $request->get('id',null);
+      $customer_id = $session->get('user')['_id'];
 
-    	$model = Customer::findOne($id);
-    	$model->delete();
+      $customer = Customer::findOne($customer_id);
+      $bill = $customer['bill'] ;
 
-    	if($model->delete()){
-    		$session->setFlash('danger', " ลบผิดพลาด");
-    		return $this->redirect($baseUrl."/list/history");
+      if($bill==null)
+        $bill = array();
 
-    	}
-    	else {
-    		//echo "success";
-    		$session->setFlash('success', "ลบสำเร็จ");
-    		return $this->redirect($baseUrl."/list/history");
-    	}
+        $t = array();
+        $billz = Customer::findOne($bill);
+
+        // $t['idbill'] = $request->get('idbill',null);
+        // $t['idboat'] = $request->get('boat_id',null);
+        // $t['destination'] = $request->get('destination',null);
+        // $t['rentdate'] = $request->get('rentdate',null);
+        // $t['backtdate'] = $request->get('backtdate',null);
+        // $t['status'] = $request->get('status',"ยกเลิกการจอง");
+        var_dump($billz);
+
+        // array_push($bill,$t);
+        // $customer->bill = $bill;
+      //  $customer->save();
+       //
+      //  return $this->redirect($baseUrl."/list/history");
 
     }
 }
